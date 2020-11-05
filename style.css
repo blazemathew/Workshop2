@@ -39,33 +39,73 @@ header{
     margin:auto;
 }
 
+.wrap1a{
+    padding: 7%;
+    padding-top: 1%;
+    padding-right: 3%;
+    margin:auto;
+}
+
+.wrap2{
+    padding: 6%;
+    margin:auto;
+}
+
 
 .wrap3{
     padding: 2% 7% 4% 7% ;
     margin:auto;
 }
 
+.wrap6{
+    padding: 6%;
+    margin:auto;
+}
+
+.wrap8{
+    padding-top: 3%;
+    padding: 7%;
+    padding-bottom: 1%;
+    margin:auto;
+}
+
+.wrap10{
+    padding-top: 3%;
+    padding: 7%;
+    padding-bottom: 0%;
+    margin:auto;
+}
+
+.wrap11{
+    padding-left: 7%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    margin:auto;
+}
+
+.bord1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 2.5%;
+}
+
 
 .logo img{
-    padding:30px 0 0 40px;
     float:left;
 }
 
 .nav-area{
     position: absolute;
-    
     list-style: none;
-    margin-top: 25px;
     width: 90%;
-  
-   
 }
 
 ul{
     margin-left: 30%;
 }
 
- a{
+ .a{
     display: inline-block; 
     color: white;
     text-decoration: none;
@@ -73,12 +113,16 @@ ul{
     text-align: right;
     font-size: 14px;
     font-weight: bold;
+    border-bottom: 3px solid transparent;
 }
 
-a:hover{
-    color: white;
+.a.active,.a:hover{
     text-decoration: none;
+    color: white;
+    border-bottom: 3px solid #F97794;
 }
+
+
 
 .line {
     margin-left: 10px;
@@ -87,38 +131,11 @@ a:hover{
     background-color: white;
 }
 
-a:nth-child(2):hover ~ .line{
-    transform: translate(80px);
-    
-}
 
-a:nth-child(3):hover ~ .line{
-    transform: translate(170px); 
-}
-
-a:nth-child(4):hover ~ .line{
-    transform: translate(260px); 
-}
-
-a:nth-child(5):hover ~ .line{
-    transform: translate(350px); 
-}
-
-a:nth-child(6):hover ~ .line{
-    transform: translate(440px); 
-}
-
-a:nth-child(7):hover ~ .line{
-    transform: translate(510px); 
-}
-
-a:nth-child(8):hover ~ .line{
-    transform: translate(585px); 
-}
 
 .title1 {
     color: white;
-    margin-top:22% ;
+    margin-top:18% ;
     padding: 1%;
     float: left;
     width:100%;
@@ -134,7 +151,6 @@ a:nth-child(8):hover ~ .line{
 
 .paragraph {
     font-size: 16px;
-    font-family: Avenir;
     padding-left: 5px;
     text-align: left;
 }
@@ -167,9 +183,25 @@ a:nth-child(8):hover ~ .line{
     justify-content: center; 
   }
 
+  .text4-2a{
+      margin-top: 8%;
+    text-align: center;
+    justify-content: center; 
+  }
+
   .text2{
     text-align: center;
     justify-content: center;
+  }
+
+  .text2a{
+    padding-bottom: 2%;
+  }
+
+  .text7{
+    padding-bottom: 4% ;
+    text-align: center;
+    justify-content: center; 
   }
 
 .bord{
@@ -188,10 +220,27 @@ a:nth-child(8):hover ~ .line{
     border: 1px solid #D0D0D0;
     border-radius: 5px;
     margin: 10px;
-    padding: 8px;
+    padding: 25px;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.box1:hover{
+    border: 2px solid #F97794;
+    box-shadow: 0 0 17px 0 rgba(146, 146, 146, 0.5);
+    overflow: inherit;
+}
+
+.box1 h5{
+    padding: 3%;
+}
+
+.head2{
+    padding: 4%;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
 }
 
 .heading1  {
@@ -201,8 +250,13 @@ a:nth-child(8):hover ~ .line{
 
 .paragraph1 {
     color: #445A64;
-    padding: 2%;
     font-size: 14px;
+}
+
+.paragraph2a {
+    color: #445A64;
+    font-size: 14px;
+    padding-bottom: 5%;
 }
 
 .oval {
@@ -222,14 +276,13 @@ a:nth-child(8):hover ~ .line{
 }
 
 .button1{
-    margin: 4%;
+    margin: 2%;
     width: 150px;
 }
 
-
 .text22{
-    padding: 3%;
-    padding-bottom: 0%;
+    padding: 5%;
+    padding-bottom: 3%;
     text-align: center;
     justify-content: center;
   }
@@ -257,7 +310,7 @@ a:nth-child(8):hover ~ .line{
 
 .paragraph3{
     padding-top: 14px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .oval3 img{
@@ -277,6 +330,7 @@ a:nth-child(8):hover ~ .line{
   
 
   .box4{
+      margin-bottom: 15%;
     display: block;
     position: relative;
     width: 33.33%;
@@ -285,6 +339,9 @@ a:nth-child(8):hover ~ .line{
 }
 
 .head4{
+    color: #263238;
+    font-size: 18px;
+    text-align: center;
     font-weight: bold;
 }
 
@@ -299,6 +356,11 @@ a:nth-child(8):hover ~ .line{
     text-align: center;
 }
 
+.oval4 img:hover,.oval4-4 img:hover{
+    width: 100%;
+    height: 100%;
+}
+
 .oval4-4 img{
     width: 90%;
     height: auto;
@@ -310,6 +372,11 @@ a:nth-child(8):hover ~ .line{
 
 .oval5{
     margin-left: 15%;
+    padding: 2%;
+}
+
+.oval5,.oval55{
+    padding: 2%;
 }
 
 .oval5 img{
@@ -320,6 +387,11 @@ a:nth-child(8):hover ~ .line{
     margin-right: 2px;
 }
 
+.oval5:hover,.oval55:hover{
+    border-radius: 5px;
+    border: 1px solid #F97794;
+    box-shadow: 0 0 8px 0 rgba(146, 146, 146, 0.5);
+}
 .oval6{
     background-color: yellowgreen;
     font-size: 12px;
@@ -329,6 +401,7 @@ a:nth-child(8):hover ~ .line{
 .box6{
     display: block;
     position: relative;
+    padding-top: 3%;
     width: 20%;
     justify-content: center;
     text-align: center;
@@ -366,6 +439,7 @@ a:nth-child(8):hover ~ .line{
 
 
 .head5{
+    padding: 6%;
     margin-left: 12%;
     font-size: 16px;
     align-items: center;
@@ -441,36 +515,29 @@ a:nth-child(8):hover ~ .line{
     display: block;
     position: relative;
     width: 50%;
-    border: 1px solid #D0D0D0;
+    border: 1px solid transparent;
+    box-shadow: 0 0 8px 0 rgba(146, 146, 146, 0.5);
     border-radius: 5px;
     margin: 2%;
-    padding: 10px;
+    padding: 2%;
 }
 
+.oval66{
+    padding: 2%;
+    width: 35%;
+}
 
 .oval66 img{
-    margin: 4%;
     margin-left: 10%;
     border-radius: 100%;
-    width: 60%;
-    height: 90%;
-    
-}
-
-.oval666 img{
-    margin: 4%;
-    margin-left: 10%;
-    border-radius: 100%;
-    width: 70%;
-    height: 90%;
-    
+    width: 80%;
+    height: 100%;
 }
 
 .head66{
     width: 65%;
-    margin-top: 5%;
-    margin-left: 0;
-    justify-content: left;
+    padding-top: 8%;
+
 }
 
 .paragraph66 {
@@ -493,28 +560,59 @@ a:nth-child(8):hover ~ .line{
 }
 
 .box77{
+    margin-bottom: 15%;
     display: block;
     position: relative;
-    width: 10%;
+    width: 25%;
+    margin-right: 4%;
     border: 1px solid #D0D0D0;
     border-radius: 5px;
     justify-content: center;
     text-align: center;
 }
 
+.box77a{
+    margin-bottom: 15%;
+    width: 90%;
+  display: block;
+  border: 1px solid #D0D0D0;
+    border-radius: 5px;
+ 
+}
+
+.bord7a{
+    margin: 3%;
+}
+
+.bord8a{
+    display: flex;
+    margin-left: 2px;
+}
+
+.space7{
+    padding: 4%;
+    justify-content: center;
+    text-align: center;
+}
+
+.box7 img{
+    margin: 4%;
+} 
+
+
+
 /* 8th Section  */
 
   .oval8 img{
-    padding: 14px;
-    padding-bottom: 0%;
-    width: 90%;
+      height: 40%;
     border-radius: 5px;
     justify-content: center;
     text-align: center;
 }
 
+
 .oval8a{
-    height: 81%;
+    height: 100%;
 }
 
 .box8{
@@ -522,16 +620,33 @@ a:nth-child(8):hover ~ .line{
 }
 
 .paragraph8 {
-   margin-top: 0%;
+    margin-top: 2%;
+    padding: 2%;
     color: #544837;
-    font-size: 16px;
+    font-size: 17.44px;
 }
 
 .paragraph88 {
-    margin-top: 0%;
-   margin-left: 4%;
-    font-size: 18px;
+    padding: 2%;
+    padding-top: 1%;
+    color: #544837;
+    font-size: 17.44px;
 }
+
+.paragraph88:hover{
+    color: #EE7892;
+}
+
+.space8{
+    padding: 1%;
+}
+
+.space8ab{
+    padding-top: 3px;
+    font-size: 12px;
+}
+
+
 
 /* 9th Section  */
 
@@ -539,10 +654,45 @@ a:nth-child(8):hover ~ .line{
     background-color: #F7F9FF;
 }
 
+.oval9{
+    height: 100%;
+}
+
+.space9{
+    padding: 4%;
+    padding-top: 2%;
+    padding-bottom: 0%;
+    padding-right: 0%;
+    width: 100%;
+}
+
+.space9ab{
+    padding-top: 3%;
+    width: 20%
+}
+
+.space9ab img{
+    margin-top: 2%;
+}
+
+.space9ab-text{
+    padding-top: 1%;
+    padding-bottom: 0%;
+}
+
+.head9{
+    padding: 2%;
+}
+
+.text9{
+    padding: 2%;
+    font-size: 12px;
+    color: #EE7892;
+}
 
 
 .oval8 input{
-    margin: 2%;
+    margin-top: 2%;
     padding: 12px;
     width: 95%;
     border-radius: 25px;
@@ -567,17 +717,17 @@ input[type=text]{
 .box9{
     display: block;
     position: relative;
-    width: 49%;
-  
+    width: 48.8%;
 }
 
 
 .oval8 textarea{
-    margin: 2%;
+    margin-top: 2%;
     padding: 18px;
     padding-bottom: 0%;
     width: 95%;
     border:solid 1px #a0d18c;
+    outline: none;
 }
 
 .button2{
@@ -588,11 +738,7 @@ input[type=text]{
 /* 10th Section  */
 
 .title2 {
-    margin-top:5% ;
-    float: left;
-    width: 40%;
-    height: auto;
-    position: relative;
+    width: 55%;
 }
 
 .heading2  {
@@ -601,8 +747,14 @@ input[type=text]{
     line-height: 25px;
 }
 
+.heading10  {
+    font-size: 16px;
+    text-align: left;
+    line-height: 25px;
+}
+
 .title3 {
-    padding:5% ;
+    width: 45%;
     margin-left: 10%;
     position: relative;
 }
@@ -613,14 +765,78 @@ input[type=text]{
     text-align: left;
 }
 
+.paragraph10 {
+    font-size: 14px;
+    margin-top: 4%;
+    text-align: left;
+    width: 85%;
+}
+
 .bord img{
     margin: 1%;
 }
 
-.box10 img{
- 
-    width: 16.66%;
+.box10{
+    padding-top: 5px;
+    width: 100%;
+    float: right;
 }
+
+.text11{
+    color: orange;
+}
+
+.title11a {
+    width: 70%;
+}
+
+.title11b{
+    width: 30%;
+}
+
+
+.text11a{
+    margin-left: 5%;
+    justify-content: center;
+}
+
+.bord11q{
+    display: flex;
+}
+
+.bord11q img{
+    margin: 0.5%;
+}
+
+/* Slick Slider  */
+
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+	padding: 4%;
+}
+
+.slick-dots li{
+    display: block;
+    background: rgba(124, 124, 124, 0.57);
+    border-radius: 50%;
+    width: 10%;
+}
+
+.slick-dots button{
+    display: block;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    text-indent: -9999px;
+}
+
+
+.slick-dots li.slick-active button{
+    background-color: #EE7892;
+}
+
 
 
 @media screen and (max-width: 590px) {
@@ -659,6 +875,11 @@ input[type=text]{
         margin:auto;
     }
 
+    .wrap2{
+        padding: 9%;
+        margin:auto;
+    }
+
     .wrap6{
         padding: 3%;
         margin:auto;
@@ -666,8 +887,7 @@ input[type=text]{
 
     .bord2{
         display: flex;
-        flex-flow: column nowrap;
-        
+        flex-flow: column nowrap; 
     } 
 
     .box1,
