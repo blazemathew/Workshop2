@@ -39,8 +39,8 @@ header{
     margin:auto;
 }
 
-.wrap1a{
-    padding: 7%;
+.wrap1a,.wrap1a-large{
+    padding: 3%;
     padding-top: 1%;
     padding-right: 3%;
     margin:auto;
@@ -108,10 +108,7 @@ header{
 .nav-area{
     list-style: none;
     padding-right: 2%;
-
 }
-
-
 
  .a{
     display: inline-block; 
@@ -613,6 +610,14 @@ header{
     margin: 3%;
 }
 
+.bord-m{
+    display: flex;
+}
+
+.logo-mob{
+    float: right;
+}
+
 .bord8a{
     display: flex;
     margin-left: 2px;
@@ -972,21 +977,108 @@ input[type=text]{
     padding: 12px 12px;
 }
 
+#sidebar{
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 280px;
+    height: 100%;
+    background-color: #FFFFFF;
+    padding-left: 0;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.logo-m{
+    float: right;
+}
+
+#sidebar.active{
+    left: 0;
+}
+
+#sidebar-mobile{
+    display: block; 
+    padding: 18px;
+    font-size: 15px;
+    color: #000;
+    text-decoration: none;
+    text-align: left;
+    font-weight: 600;
+}
+
+#sidebar-mobile:hover{
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #EE7892;
+}
+
+
+/* hamburg  styling*/
+
+.logo-m {
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+    padding: 22px;
+    cursor: pointer;
+}
+
+
+.line {
+    position: absolute;
+    height: 8px;
+    width: 80%;
+    background: white;
+    border-radius: 8px;
+    transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.35s;
+}
+
+.top {
+    top: 18%;
+}
+
+.middle {
+    top: 48%;
+}
+
+.bottom {
+    top: 78%;
+}
+
+.icon.close .top {
+    transform: rotate(45deg);
+    top: 2%;
+    background:#EE7892;
+}
+
+.icon.close .middle,
+.icon.close .bottom {
+    transform: rotate(-45deg);
+    top: 2%;
+    background:#EE7892;
+}
+  
+  
+
 @media screen and (max-width: 768px) {
     .logo1a{
         width: 40%;
     }
 
     #mobile_icon{
-        padding: 3%;
+        cursor: pointer;
+        transition: .5s;
     }
+    
+    
 
     .title1 {
         margin-top:10% ;
     }
 
     .title1-mobile {
-        margin-top:35% ;
+        margin-top:30% ;
     }
     
     .heading  {
@@ -1080,6 +1172,7 @@ input[type=text]{
         align-items: center;
     }
 
+    .header-b,
     .nav-area,
     .section4-slider,
     .section4-tech-stack,
@@ -1141,6 +1234,11 @@ input[type=text]{
 
 
 @media screen and (min-width: 768.5px) {
+
+    .mobile-icon{
+        display: none;
+    }
+
     .section4a-slider,
     .section4a-tech-stack,
     .section7a,
@@ -1152,15 +1250,26 @@ input[type=text]{
 }
 
 @media screen and (min-width: 958px) {
-    .bord1a{
+    #head-mobile,
+    
+    .header-a,
+    .sidebar{
         display: none;
     }
 }
 
 @media screen and (max-width: 958px) {
-    .bord1{
+     #head-mobile,
+     .nav-area,
+    .header-b{
         display: none;
     }
+
+    .title1-mobile {
+        margin-top:10% ;
+    }
+
+    
 }
 
 
