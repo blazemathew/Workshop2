@@ -110,7 +110,9 @@ header{
     padding-right: 2%;
 }
 
- .a{
+/*
+
+ #uu li,.a{
     display: inline-block; 
     color: white;
     text-decoration: none;
@@ -121,22 +123,123 @@ header{
     border-bottom: 3px solid transparent;
 }
 
-.a.active,.a:hover{
+#uu li.active,
+.a.active,
+.a:hover{
+    text-decoration: none;
+    color: white;
+    border-bottom: 3px solid #F97794;
+}
+*/
+
+.nav-area ul{
+    list-style: none;
+}
+
+.nav-area ul li{
+    width: 80px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    float: left;
+    position: relative;
+}
+
+.nav-area ul li a{
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-area ul li a:hover,
+.nav-area ul li a.active{
+    text-decoration: none;
+    color: white;
+    border-bottom: 3px solid #F97794;
+}
+
+.nav-area ul ul{
+    position: absolute;
+    display: none;
+}
+
+.nav-area ul li:hover >ul{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-area ul ul li{
+    background-color: white;
+    border: 1px solid #D0D0D0;
+    border-radius: 1px;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+.nav-area ul ul li:hover{
+    background-color: #EE7892;
+    color: #FFFFFF;
+}
+/*New Style */
+/*
+#uu li{
+    display: inline-block; 
+    width: 90px;
+    padding: 10px;
+    height: 35px;
+    text-align: center;
+    position: relative;
+}
+
+#uu li a{
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    text-align: center;
+}
+
+#uu li .a.active,
+#uu li .a:hover{
     text-decoration: none;
     color: white;
     border-bottom: 3px solid #F97794;
 }
 
 
-
-.line {
-    margin-left: 10px;
-    width: 65px;
-    height: 3px;
-    background-color: white;
+#new-uu {
+    list-style: none;
+    float: right;
+    justify-content: center;
+    
 }
 
+#new-uu li{
+    position: absolute;
 
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    width: 80px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    justify-content: center;
+}
+
+#new-uu li a{
+    font-size: 14px;
+    font-weight: bold;
+    color: red;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+}
+
+*/
 
 .title1-mobile {
     color: white;
@@ -367,6 +470,7 @@ header{
     font-weight: bold;
 }
 
+
 .oval4 img{
     padding: 14px;
     padding-bottom: 0%;
@@ -378,19 +482,40 @@ header{
     text-align: center;
 }
 
-.oval4 img:hover,.oval4-4 img:hover{
-    width: 100%;
-    height: 100%;
-}
+
 
 .oval4-4 img{
-    width: 90%;
+    width: 100%;
     height: auto;
     border: 1px solid #D0D0D0;
     border-radius: 5px;
     justify-content: center;
     text-align: center;
 }
+
+.oval4-hover{
+    display: none;
+}
+
+.oval4:hover +
+.oval4-hover{
+    position: absolute;
+    border-radius: 5px;
+    width: 90%;
+    padding: 10%;
+    border: none;
+    top: 25px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0 0 0 / 68%);
+    color: white;
+    display: block;
+    transition: 0.7s;
+    text-align: center;
+}
+
+
 
 .oval5{
     margin-left: 15%;
@@ -980,8 +1105,8 @@ input[type=text]{
 #sidebar{
     position: fixed;
     top: 0;
-    left: -280px;
-    width: 280px;
+    left: -240px;
+    width: 240px;
     height: 100%;
     background-color: #FFFFFF;
     padding-left: 0;
@@ -1078,7 +1203,7 @@ input[type=text]{
     }
 
     .title1-mobile {
-        margin-top:30% ;
+        margin-top:50% ;
     }
     
     .heading  {
@@ -1266,10 +1391,8 @@ input[type=text]{
     }
 
     .title1-mobile {
-        margin-top:10% ;
+        margin-top:30% ;
     }
-
-    
 }
 
 
