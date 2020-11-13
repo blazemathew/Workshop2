@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
 
-
-
 body{
     margin:0;
     padding: 0;
@@ -20,7 +18,7 @@ body{
 
 
 header{
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(1, 17, 68, 0.5)), url("assets/background_image1.jpg");
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(1, 17, 68, 0.5)), url("assets/background2.jpg");
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -113,28 +111,6 @@ header{
     padding-right: 2%;
 }
 
-/*
-
- #uu li,.a{
-    display: inline-block; 
-    color: white;
-    text-decoration: none;
-    padding: 10px ;
-    text-align: right;
-    font-size: 14px;
-    font-weight: bold;
-    border-bottom: 3px solid transparent;
-}
-
-#uu li.active,
-.a.active,
-.a:hover{
-    text-decoration: none;
-    color: white;
-    border-bottom: 3px solid #F97794;
-}
-*/
-
 .nav-area ul{
     list-style: none;
 }
@@ -187,62 +163,6 @@ header{
     background-color: #EE7892;
     color: #FFFFFF;
 }
-/*New Style */
-/*
-#uu li{
-    display: inline-block; 
-    width: 90px;
-    padding: 10px;
-    height: 35px;
-    text-align: center;
-    position: relative;
-}
-
-#uu li a{
-    font-size: 14px;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    border-bottom: 3px solid transparent;
-    text-align: center;
-}
-
-#uu li .a.active,
-#uu li .a:hover{
-    text-decoration: none;
-    color: white;
-    border-bottom: 3px solid #F97794;
-}
-
-
-#new-uu {
-    list-style: none;
-    float: right;
-    justify-content: center;
-    
-}
-
-#new-uu li{
-    position: absolute;
-
-    background-color: #FFFFFF;
-    border: 1px solid #FFFFFF;
-    width: 80px;
-    height: 35px;
-    line-height: 35px;
-    text-align: center;
-    justify-content: center;
-}
-
-#new-uu li a{
-    font-size: 14px;
-    font-weight: bold;
-    color: red;
-    text-decoration: none;
-    border-bottom: 3px solid transparent;
-}
-
-*/
 
 .title1-mobile {
     color: white;
@@ -258,6 +178,7 @@ header{
     font-size: 63px;
     text-align: left;
     line-height: 76px;
+    font-weight: bold;
 }
 
 .paragraph {
@@ -322,6 +243,11 @@ header{
     justify-content: center;
   }
 
+  .text2 h2{
+    font-weight: bold;
+    }
+
+
   .text2a{
     padding-bottom: 2%;
   }
@@ -330,6 +256,10 @@ header{
     padding-bottom: 4% ;
     text-align: center;
     justify-content: center; 
+  }
+
+  .text7 h2{
+      font-weight: bold;
   }
 
 .bord{
@@ -367,6 +297,7 @@ header{
 .head2{
     padding: 4%;
     font-size: 18px;
+    font-weight: bold;
     justify-content: center;
     align-items: center;
 }
@@ -412,8 +343,6 @@ header{
 .text22{
     padding: 5%;
     padding-bottom: 3%;
-    text-align: center;
-    justify-content: center;
   }
   /* 3rd Section  */
  
@@ -423,6 +352,9 @@ header{
     justify-content: center;
   }
 
+  .text3 h2{
+      font-weight: bold;
+  }
 .box2{
     display: block;
     position: relative;
@@ -435,6 +367,7 @@ header{
 .head3{
     padding-top: 8px;
     font-size: 16px;
+    font-weight: bold;
 }
 
 .paragraph3{
@@ -456,6 +389,9 @@ header{
     background-position: center;
 }  
 
+.text h2{
+    font-weight: bold;
+}
   
 
   .box4{
@@ -479,7 +415,7 @@ header{
     padding: 14px;
     padding-bottom: 0%;
     width: 90%;
-    height: auto;
+    height: 90%;
     border: 1px solid #D0D0D0;
     border-radius: 5px;
     justify-content: center;
@@ -595,6 +531,7 @@ header{
     padding: 6%;
     margin-left: 12%;
     font-size: 16px;
+    font-weight: bold;
     align-items: center;
 }
 
@@ -602,6 +539,7 @@ header{
     padding-top: 4%;
     padding-bottom: 4%;
     font-size: 16px;
+    font-weight: bold;
 }
 
 .bord7{
@@ -645,9 +583,14 @@ header{
     border-radius: 5px;
     margin: 1%;
     padding: 2%;
+    font-weight: bold;
     color: white;
     justify-content: center;
     text-align: center;
+}
+
+.box7 h5{ 
+    font-weight: bold;
 }
 
 .oval6 {
@@ -690,7 +633,10 @@ header{
 .head66{
     width: 65%;
     padding-top: 8%;
+}
 
+.head66 h5{
+    font-weight: bold;
 }
 
 .paragraph66 {
@@ -707,11 +653,11 @@ header{
     outline: none;
 }
 
-.oval7 {
-    padding:3%;
+.space7 img {
+    padding:2%;
     margin-left: 40%;
-    justify-content: center;
-    align-items: center;
+    width: 20%; 
+    height:20%;
 }
 
 .box77{
@@ -756,6 +702,10 @@ header{
     padding: 4%;
     justify-content: center;
     text-align: center;
+}
+
+.space7 h6{
+    font-weight: bold;
 }
 
 .box7 img{
@@ -859,6 +809,7 @@ header{
     padding-top: 1%;
     color: #544837;
     font-size: 17.44px;
+    font-weight: bold;
 }
 
 .paragraph88:hover{
@@ -867,6 +818,7 @@ header{
 
 .space4{
     padding: 3%;
+    font-weight: bold;
 }
 
 .space4a i{
@@ -918,10 +870,10 @@ header{
 
 .head9{
     padding: 2%;
+    font-weight: bold;
 }
 
 .text9{
-    padding: 2%;
     font-size: 12px;
     color: #EE7892;
 }
@@ -980,12 +932,14 @@ input[type=text]{
 
 .heading2  {
     font-size: 26px;
+    font-weight: bold;
     text-align: left;
     line-height: 25px;
 }
 
 .heading10  {
     font-size: 16px;
+    font-weight: bold;
     text-align: left;
     line-height: 25px;
 }
@@ -1191,37 +1145,21 @@ input[type=text]{
   
 
 @media screen and (max-width: 768px) {
-    .logo1a{
-        width: 40%;
-    }
-
     #mobile_icon{
         cursor: pointer;
-        transition: .5s;
     }
-    
-    
-
-    .title1 {
-        margin-top:10% ;
-    }
-
+ 
     .title1-mobile {
         margin-top:50% ;
     }
     
     .heading  {
         font-size: 25px;
-        text-align: left;
         line-height: 40px;
     }
     
     .paragraph {
-        font-size: 16px;
-        font-family: Avenir;
         padding-top: 5px;
-        padding-left: 5px;
-        text-align: left;
     }
     .section6{
         width: 100%;
@@ -1229,21 +1167,17 @@ input[type=text]{
 
     .wrap{
         padding: 9%;
-        margin:auto;
     }
 
     .wrap2{
         padding: 9%;
-        margin:auto;
     }
 
     .wrap6{
         padding: 3%;
-        margin:auto;
     }
 
     .bord2{
-        display: flex;
         flex-flow: column nowrap; 
     } 
 
@@ -1258,16 +1192,7 @@ input[type=text]{
     .bord8a{
         padding-left: 30%;
         padding-right: 30%;
-        display: flex;
     }
-
-    .title11a{
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-
 
     .box2{
         width: 90%;
@@ -1279,14 +1204,9 @@ input[type=text]{
         width: 40%;
     }
 
-    .box8{
-        width: 33.33%;
-        justify-content: center;
-        text-align: center;
-    }
+   
 
     .paragraph8,.paragraph88{
-        width: 33.33%;
         justify-content: center;
         text-align: center;
     }
@@ -1349,6 +1269,10 @@ input[type=text]{
         margin-top: 16%;
     }
 
+    .text4-2a h2{
+        font-weight: bold;
+    }
+
     .text22{
         padding: 5%;
         padding-bottom: 18%;
@@ -1357,17 +1281,11 @@ input[type=text]{
     .wrap3{
         padding: 0% 7% 4% 7% ;
     }
-
 }
 
 
-
 @media screen and (min-width: 768.5px) {
-
-    .mobile-icon{
-        display: none;
-    }
-
+    .mobile-icon,
     .section4a-slider,
     .section4a-tech-stack,
     .section7a,
@@ -1380,7 +1298,6 @@ input[type=text]{
 
 @media screen and (min-width: 958px) {
     #head-mobile,
-    
     .header-a,
     .sidebar{
         display: none;
