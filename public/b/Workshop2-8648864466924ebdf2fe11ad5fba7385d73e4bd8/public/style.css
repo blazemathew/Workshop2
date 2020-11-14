@@ -5,6 +5,7 @@ body{
     padding: 0;
     color: #445A64;
     font-size: 14px;
+    font-weight: 400;
     font-family: 'Open Sans', sans-serif;
     width: 100%;
 }
@@ -13,6 +14,8 @@ body{
     width: 100%;
     margin:0 auto;
 }
+
+
 
 header{
     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(1, 17, 68, 0.5)), url("assets/background2.jpg");
@@ -41,12 +44,6 @@ header{
     padding: 3%;
     padding-top: 1%;
     padding-right: 3%;
-    margin:auto;
-}
-
-.wrap1ab{
-    padding: 6%;
-    padding-top: 1%;
     margin:auto;
 }
 
@@ -97,7 +94,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 10px 2.5%;
 }
 
 .logo{
@@ -169,32 +166,25 @@ header{
 
 .title1-mobile {
     color: white;
-    margin-top:15% ;
+    margin-top:18% ;
     padding: 1%;
     float: left;
     width:100%;
     height: auto;
     position: relative;
-    font-size: 30px;
-    text-align: left;
-    font-weight: bold;
-}
-
-.title2-mobile {
-    font-size: 55px;
 }
 
 .heading  {
-    font-size: 60px;
+    font-size: 63px;
     text-align: left;
-    margin-top: 0;
+    line-height: 76px;
     font-weight: bold;
 }
 
 .paragraph {
     font-size: 16px;
-    font-weight: 400;
-    margin-left: 5px;
+    padding-left: 5px;
+    text-align: left;
 }
 
 .button,.button1 {
@@ -995,7 +985,6 @@ input[type=text]{
 }
 
 .text11{
-    padding-top: 2px;
     color: orange;
 }
 
@@ -1166,6 +1155,7 @@ input[type=text]{
     
     .heading  {
         font-size: 25px;
+        line-height: 40px;
     }
     
     .paragraph {
@@ -1307,21 +1297,22 @@ input[type=text]{
 }
 
 @media screen and (min-width: 958px) {
-    .header-a{
+    #head-mobile,
+    .header-a,
+    .sidebar{
         display: none;
     }
 }
 
 @media screen and (max-width: 958px) {
+     #head-mobile,
+     .nav-area,
     .header-b{
         display: none;
     }
 
     .title1-mobile {
-        margin-top:40% ;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        margin-top:30% ;
     }
 }
 
