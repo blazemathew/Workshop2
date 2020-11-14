@@ -1193,9 +1193,12 @@ input[type=text]{
 
     .box1,
     .box4,
-    .box6,
     .box7,
     .title11a{
+        width: 95%;
+    }
+
+    .box6{
         width: 100%;
     }
 
