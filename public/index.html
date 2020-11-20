@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workshop2</title>
 
-    <!--<link rel="stylesheet" href="style.css" >-->
+    <!--<link rel="stylesheet" href="style1.css">-->
+    <!--<link href="style1.css" rel="preload" as="style1" onload="this.rel='stylesheet'">-->
     <link href="style.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
 
     <link href="slick/slick.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <link href="slick/slick-theme.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" />
@@ -20,16 +22,18 @@
         onload="this.onload=null;this.rel='stylesheet'">
     </link>
 
+
 </head>
 
-<body>
-    <div id="wrapper">
+<body onload="js_method()" id="main" style="display:none">
+    <div>
         <header>
             <div class="wrap1ab">
                 <div class="header-a">
-                    <div class="bord1a">
-                        <div class="logo1a">
-                            <img src="assets/logo.png">
+                    <div class="bord1">
+                        <div>
+                            <img id="logo1-mob" class="lazy" src="assets/logo1.png" data-src="assets/logo.png"
+                                alt="logo">
                         </div>
                         <div id="mobile_icon" class="logo-m">
                             <div class="circle icon">
@@ -40,10 +44,12 @@
                         </div>
                     </div>
 
-                    <div class="title1-mobile">
-                        Web Development
-                        Company
-                        <div class="paragraph">
+                    <div class="title1-mobile1-mob">
+                        <div class="heading1-mob">
+                            Web Development
+                            Company
+                        </div>
+                        <div class="paragraph1-mob">
                             Empowering startups with our innovative web development services
                         </div>
                         <button class="button">TALK TO US</button>
@@ -66,7 +72,7 @@
                 <div class="header-b">
                     <div class="bord1">
                         <div class="logo">
-                            <img src="assets/logo.png" width="80%" height="80%">
+                            <img class="lazy" src="assets/logo1.png" data-src="assets/logo.png" width="80%" alt="logo">
                         </div>
                         <nav class="nav-area">
                             <ul id="uu">
@@ -76,10 +82,10 @@
                                 <li><a class="a" href="#Works">Works</a></li>
                                 <li><a class="a" href="#Tech Stack">Tech</a>
                                     <ul>
-                                        <li><a href="#Home"></a>React</li>
-                                        <li><a href="#Services"></a>Angular</li>
-                                        <li><a href="#Features"></a>Vue</li>
-                                        <li><a href="#Works"></a>Flutter</li>
+                                        <li><a href="#React"></a>React</li>
+                                        <li><a href="#Angular"></a>Angular</li>
+                                        <li><a href="#Vue"></a>Vue</li>
+                                        <li><a href="#Flutter"></a>Flutter</li>
                                     </ul>
                                 </li>
                                 <li><a class="a" href="#Team">Team</a></li>
@@ -91,11 +97,11 @@
 
                     <div class="title1-mobile">
                         <div class="heading">
-                            Web Development1<br />
+                            Web Development
                             Company
                         </div>
                         <div class="paragraph">
-                            Empowering startups with our innovative web development services
+                            Empowering startups with our innovative web development services<br>
                         </div>
                         <button class="button">TALK TO US</button>
                     </div>
@@ -106,652 +112,530 @@
 
         <!--2nd Section-->
         <div id="After-header">
-            <div class="section2">
-                <div class="wrap2">
-                    <div class="text2">
-                        <h2>OUR SERVICES</h2>
-                        <hr size="1" width="12%" color="#F97794;">
-                        <div class="text2a">
-                            From planning to the final launch,our services benefits startups and enterprises alike
-                            without
-                            having
-                            to
-                            go overboard on development costs.
+
+            <div class="wrap2">
+                <div class="text2">
+                    <h2>OUR SERVICES</h2>
+                    <hr size="1" width="12%" color="#F97794;">
+                    <div class="text2a">
+                        From planning to the final launch,our services benefits startups and enterprises alike
+                        without
+                        having
+                        to
+                        go overboard on development costs.
+                    </div>
+                </div>
+                <div class="bord2">
+                    <div class="box1">
+                        <div class="oval">
+                            <img class="lazy" data-src="assets/Web Application.svg">
+                        </div>
+                        <div class="head2">
+                            Web Application
+                        </div>
+                        <div class="paragraph1">
+                            We use the latest frontent and backend
+                            technologies to build super fast web apps that
+                            your customers will love.
                         </div>
                     </div>
+
+                    <div class="box1">
+                        <div class="oval">
+                            <img class="lazy" data-src="assets/Mobile Application.svg">
+                        </div>
+                        <div class="head2">
+                            Mobile Application
+                        </div>
+                        <div class="paragraph1">
+                            We build high performance mobile apps that can
+                            run on multiple platforms using technologies like
+                            React Native and Flutter.
+                        </div>
+                    </div>
+
+                    <div class="box1">
+                        <div class="oval">
+                            <img class="lazy" data-src="assets/Cloud Architecture.svg">
+                        </div>
+                        <div class="head2">
+                            Cloud Architecture
+                        </div>
+                        <div class="paragraph1">
+                            We use services technologies like AWS and
+                            Google Cloud to build highly secure and scalable
+                            applications.
+                        </div>
+                    </div>
+                </div>
+
+                <div>
                     <div class="bord2">
                         <div class="box1">
                             <div class="oval">
-                                <img class="lazy" data-src="assets/Web Application.svg">
+                                <img class="lazy" data-src="assets/Idea to Full Digital Product.svg">
                             </div>
                             <div class="head2">
-                                Web Application
+                                Idea to Full Digital Product
                             </div>
                             <div class="paragraph1">
-                                We use the latest frontent and backend
-                                technologies to build super fast web apps that
-                                your customers will love.
+                                Transform your ideas to digital products that sell.
+                                We help startups and enterprises build better
+                                products and services thereby enhancing
+                                customer satisfaction and revenues.
                             </div>
                         </div>
 
                         <div class="box1">
                             <div class="oval">
-                                <img class="lazy" data-src="assets/Mobile Application.svg">
+                                <img class="lazy" data-src="assets/MVP Development.svg">
                             </div>
                             <div class="head2">
-                                Mobile Application
+                                MVP Development
                             </div>
                             <div class="paragraph1">
-                                We build high performance mobile apps that can
-                                run on multiple platforms using technologies like
-                                React Native and Flutter.
+                                Our team of architects,developers and designers
+                                will help you get your concepts up and running in
+                                no time and help you get the crucial first to
+                                market advantage.
                             </div>
                         </div>
 
                         <div class="box1">
                             <div class="oval">
-                                <img class="lazy" data-src="assets/Cloud Architecture.svg">
+                                <img class="lazy" data-src="assets/IoT Architecture.svg">
                             </div>
                             <div class="head2">
-                                Cloud Architecture
+                                IoT Architecture
                             </div>
                             <div class="paragraph1">
-                                We use services technologies like AWS and
-                                Google Cloud to build highly secure and scalable
-                                applications.
+                                Discover the untapped potential in your business
+                                by adopting the latest IoT solutions to automate
+                                processes and boost your ROI.
                             </div>
                         </div>
+
                     </div>
+                </div>
 
-                    <div>
-                        <div class="bord2">
-                            <div class="box1">
-                                <div class="oval">
-                                    <img class="lazy" data-src="assets/Idea to Full Digital Product.svg">
-                                </div>
-                                <div class="head2">
-                                    Idea to Full Digital Product
-                                </div>
-                                <div class="paragraph1">
-                                    Transform your ideas to digital products that sell.
-                                    We help startups and enterprises build better
-                                    products and services thereby enhancing
-                                    customer satisfaction and revenues.
-                                </div>
-                            </div>
-
-                            <div class="box1">
-                                <div class="oval">
-                                    <img class="lazy" data-src="assets/MVP Development.svg">
-                                </div>
-                                <div class="head2">
-                                    MVP Development
-                                </div>
-                                <div class="paragraph1">
-                                    Our team of architects,developers and designers
-                                    will help you get your concepts up and running in
-                                    no time and help you get the crucial first to
-                                    market advantage.
-                                </div>
-                            </div>
-
-                            <div class="box1">
-                                <div class="oval">
-                                    <img class="lazy" data-src="assets/IoT Architecture.svg">
-                                </div>
-                                <div class="head2">
-                                    IoT Architecture
-                                </div>
-                                <div class="paragraph1">
-                                    Discover the untapped potential in your business
-                                    by adopting the latest IoT solutions to automate
-                                    processes and boost your ROI.
-                                </div>
-                            </div>
-
-                        </div>
+                <div class="text22 text3">
+                    <h2>GOT AN AWESOME IDEA?</h2>
+                    <hr size="1" width="12%" color="#F97794;">
+                    <div class="paragraph1">
+                        Then why wait?<br />
+                        We have the perfect team to transform your ideas into digital products<br />
                     </div>
-
-                    <div class="text22 text3">
-                        <h2>GOT AN AWESOME IDEA?</h2>
-                        <hr size="1" width="12%" color="#F97794;">
-                        <div class="paragraph1">
-                            Then why wait?<br />
-                            We have the perfect team to transform your ideas into digital products<br />
-                            <button class="button1">LET'S START</button>
-                        </div>
-                    </div>
+                    <button class="button1">LET'S START</button>
                 </div>
             </div>
 
             <!--3rd Section-->
 
-            <div class="section3">
-                <div class="wrap3">
-                    <div class="text3">
-                        <h2>WHY CHOOSE US?</h2>
-                        <hr size="1" width="12%" color="#F97794;">
-                        <div class="paragraph2a">
-                            We focus on our client's success when building super fast web applications<br />
+            <div class="wrap3">
+                <div class="text3">
+                    <h2>WHY CHOOSE US?</h2>
+                    <hr size="1" width="12%" color="#F97794;">
+                    <div class="paragraph2a">
+                        We focus on our client's success when building super fast web applications<br />
+                    </div>
+                </div>
+
+                <div class="bord2">
+                    <div class="box2">
+                        <div class="oval3">
+                            <img class="lazy" data-src="assets/We Listen and We Pitch In.svg">
+                        </div>
+                        <div class="head3">
+                            We Listen and We Pitch In
+                        </div>
+                        <div class="paragraph3">
+                            We take the time to know your business to
+                            understand what makes it unique so that
+                            we can come up with solutions best suited
+                            to your needs.
                         </div>
                     </div>
 
-                    <div class="bord2">
-                        <div class="box2">
-                            <div class="oval3">
-                                <img class="lazy" data-src="assets/We Listen and We Pitch In.svg">
-                            </div>
-                            <div class="head3">
-                                We Listen and We Pitch In
-                            </div>
-                            <div class="paragraph3">
-                                We take the time to know your business to
-                                understand what makes it unique so that
-                                we can come up with solutions best suited
-                                to your needs.
-                            </div>
+                    <div class="box2">
+                        <div class="oval3">
+                            <img class="lazy" data-src="assets/Code Quality.svg">
                         </div>
-
-                        <div class="box2">
-                            <div class="oval3">
-                                <img class="lazy" data-src="assets/Code Quality.svg">
-                            </div>
-                            <div class="head3">
-                                Code Quality
-                            </div>
-                            <div class="paragraph3">
-                                We have a good code quality process that
-                                ensures better results and reduced risks
-                                for our business without any delays in
-                                launch.
-                            </div>
+                        <div class="head3">
+                            Code Quality
                         </div>
-
-                        <div class="box2">
-                            <div class="oval3">
-                                <img class="lazy" data-src="assets/Awesome Team.svg">
-                            </div>
-                            <div class="head3">
-                                Awesome Team
-                            </div>
-                            <div class="paragraph3">
-                                Right from the get go our explosive team
-                                of architects, developers and team leaders
-                                work together to bring you the best tech
-                                solutions.
-                            </div>
+                        <div class="paragraph3">
+                            We have a good code quality process that
+                            ensures better results and reduced risks
+                            for our business without any delays in
+                            launch.
                         </div>
+                    </div>
 
-                        <div class="box2">
-                            <div class="oval3">
-                                <img class="lazy" data-src="assets/Communication.svg">
-                            </div>
-                            <div class="head3">
-                                Communication
-                            </div>
-                            <div class="paragraph3">
-                                Communication is a key part of our
-                                success. You'll be updated daily on project
-                                progress. We are always open to
-                                suggestions and clearing any queries.
-                            </div>
+                    <div class="box2">
+                        <div class="oval3">
+                            <img class="lazy" data-src="assets/Awesome Team.svg">
+                        </div>
+                        <div class="head3">
+                            Awesome Team
+                        </div>
+                        <div class="paragraph3">
+                            Right from the get go our explosive team
+                            of architects, developers and team leaders
+                            work together to bring you the best tech
+                            solutions.
+                        </div>
+                    </div>
+
+                    <div class="box2">
+                        <div class="oval3">
+                            <img class="lazy" data-src="assets/Communication.svg">
+                        </div>
+                        <div class="head3">
+                            Communication
+                        </div>
+                        <div class="paragraph3">
+                            Communication is a key part of our
+                            success. You'll be updated daily on project
+                            progress. We are always open to
+                            suggestions and clearing any queries.
                         </div>
                     </div>
                 </div>
             </div>
 
+
             <!--4th Section-->
 
-            <div class="section4">
-                <div class="wrap">
+
+            <div class="wrap4">
+                <div class="text">
+                    <h2>OUR PORTFOLIO</h2>
+                    <hr size="1" width="12%" color="#F97794;">
+                    <div class="paragraph2a">
+                        We had the privilege of helping some of the best startups and enterprises across
+                        multiple
+                        industries<br />
+                        achieve their business goals.
+                    </div>
+                </div>
+
+                <div class="section4-slider ">
+                    <section class="slider-area1 slider">
+                        <div class="box4">
+                            <div class="head4">
+                                DAILYAI
+                            </div>
+                            <div class="oval4">
+                                <img class="lazy" src="assets/dummy/computer6.jpg" data-src="assets/computer6.jpg">
+                                <div class="oval4-hover">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form, by injected humour, or randomised words
+                                    which
+                                    don't look even slightly believable.
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="box4">
+                            <div class="head4">
+                                NATIONAL TAXI SERVICES
+                            </div>
+                            <div class="oval4">
+                                <img class="lazy" src="assets/dummy/image3.jpg" data-src="assets/image3.jpg">
+                                <div class="oval4-hover">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form, by injected humour, or randomised words
+                                    which
+                                    don't look even slightly believable.
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="box4">
+                            <div class="head4">
+                                PROPERTYOK
+                            </div>
+                            <div class="oval4">
+                                <img class="lazy" src="assets/dummy/computer7.jpg" data-src="assets/computer7.png">
+                                <div class="oval4-hover">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form, by injected humour, or randomised words
+                                    which
+                                    don't look even slightly believable.
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="box4">
+                            <div class="head4">
+                                DAILYAI
+                            </div>
+                            <div class="oval4">
+                                <img class="lazy" src="assets/dummy/computer6.jpg" data-src="assets/computer6.jpg">
+                                <div class="oval4-hover">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form, by injected humour, or randomised words
+                                    which
+                                    don't look even slightly believable.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box4">
+                            <div class="head4">
+                                NATIONAL TAXI SERVICES
+                            </div>
+                            <div class="oval4">
+                                <img class="lazy" src="assets/dummy/image3.jpg" data-src="assets/image3.jpg">
+                                <div class="oval4-hover">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form, by injected humour, or randomised words
+                                    which
+                                    don't look even slightly believable.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box4">
+                            <div class="head4">
+                                PROPERTYOK
+                            </div>
+                            <div class="oval4">
+                                <img class="lazy" src="assets/dummy/computer7.jpg" data-src="assets/computer7.png">
+                                <div class="oval4-hover">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form, by injected humour, or randomised words
+                                    which
+                                    don't look even slightly believable.
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </section>
+                </div>
+
+                <!--for mobile display section4-->
+                <div class="section4a-slider slider">
+                    <section class="slider-area4a">
+                        <div class="box4">
+                            <div class="head4">
+                                DAILYAI
+                            </div>
+                            <div class="oval4">
+                                <img class="lazy" src="assets/dummy/computer7.jpg" data-src="assets/computer7.png">
+                                <div class="oval4-hover">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form, by injected humour, or randomised words
+                                    which
+                                    don't look even slightly believable. If you are going to use a passage of Lorem
+                                    Ipsum, you need to be sure there isn't anything hidden in the
+                                    middle of
+                                    text.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box4">
+                            <div class="head4">
+                                NATIONAL TAXI SERVICES
+                            </div>
+                            <div class="oval4">
+                                <img class="lazy" src="assets/dummy/image3.jpg" data-src="assets/image3.jpg"
+                                    width="90%">
+                                <div class="oval4-hover">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form, by injected humour, or randomised words
+                                    which
+                                    don't look even slightly believable. If you are going to use a passage of Lorem
+                                    Ipsum, you need to be sure there isn't anything hidden in the
+                                    middle of
+                                    text.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box4">
+                            <div class="head4">
+                                PROPERTYOK
+                            </div>
+                            <div class="oval4">
+                                <img class="lazy" src="assets/dummy/computer7.jpg" data-src="assets/computer7.png">
+                                <div class="oval4-hover">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form, by injected humour, or randomised words
+                                    which
+                                    don't look even slightly believable. If you are going to use a passage of Lorem
+                                    Ipsum, you need to be sure there isn't anything hidden in the
+                                    middle of
+                                    text.
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+
+                <!--End of Section4-slider-->
+
+                <div class="text4-2a">
                     <div class="text">
-                        <h2>OUR PORTFOLIO</h2>
-                        <hr size="1" width="12%" color="#F97794;">
-                        <div class="paragraph2a">
-                            We had the privilege of helping some of the best startups and enterprises across
-                            multiple
-                            industries<br />
-                            achieve their business goals.
-                        </div>
-                    </div>
-
-                    <div class="section4-slider ">
-                        <section class="slider-area1 slider">
-                            <div class="box4">
-                                <div class="head4">
-                                    DAILYAI
-                                </div>
-                                <div class="oval4">
-                                    <img class="lazy" src="assets/computer6.jpg"
-                                        data-src="assets/assets-original-size/image2.png">
-                                </div>
-                                <div class="oval4-hover">
-                                    There are many variations of passages of Lorem Ipsum available, but the majority
-                                    have suffered alteration in some form, by injected humour, or randomised words which
-                                    don't look even slightly believable.
-                                </div>
-                            </div>
-
-                            <div class="box4">
-                                <div class="head4">
-                                    NATIONAL TAXI SERVICES
-                                </div>
-                                <div class="oval4">
-                                    <img class="lazy" src="assets/image3.jpg"
-                                        data-src="assets/assets-original-size/image3.jpg">
-                                </div>
-                                <div class="oval4-hover">
-                                    There are many variations of passages of Lorem Ipsum available, but the majority
-                                    have suffered alteration in some form, by injected humour, or randomised words which
-                                    don't look even slightly believable.
-                                </div>
-                            </div>
-
-                            <div class="box4">
-                                <div class="head4">
-                                    PROPERTYOK
-                                </div>
-                                <div class="oval4">
-                                    <img class="lazy" data-src="assets/computer7.png">
-                                </div>
-                                <div class="oval4-hover">
-                                    There are many variations of passages of Lorem Ipsum available, but the majority
-                                    have suffered alteration in some form, by injected humour, or randomised words which
-                                    don't look even slightly believable.
-                                </div>
-                            </div>
-
-                            <div class="box4">
-                                <div class="head4">
-                                    DAILYAI
-                                </div>
-                                <div class="oval4">
-                                    <img class="lazy" src="assets/computer6.jpg"
-                                        data-src="assets/assets-original-size/image2.png">
-                                </div>
-                                <div class="oval4-hover">
-                                    There are many variations of passages of Lorem Ipsum available, but the majority
-                                    have suffered alteration in some form, by injected humour, or randomised words which
-                                    don't look even slightly believable.
-                                </div>
-                            </div>
-
-                            <div class="box4">
-                                <div class="head4">
-                                    NATIONAL TAXI SERVICES
-                                </div>
-                                <div class="oval4">
-                                    <img class="lazy" src="assets/image3.jpg"
-                                        data-src="assets/assets-original-size/image3.jpg">
-                                </div>
-                                <div class="oval4-hover">
-                                    There are many variations of passages of Lorem Ipsum available, but the majority
-                                    have suffered alteration in some form, by injected humour, or randomised words which
-                                    don't look even slightly believable.
-                                </div>
-                            </div>
-
-                            <div class="box4">
-                                <div class="head4">
-                                    PROPERTYOK
-                                </div>
-                                <div class="oval4">
-                                    <img class="lazy" data-src="assets/computer7.png">
-                                </div>
-                                <div class="oval4-hover">
-                                    There are many variations of passages of Lorem Ipsum available, but the majority
-                                    have suffered alteration in some form, by injected humour, or randomised words which
-                                    don't look even slightly believable.
-                                </div>
-                            </div>
-
-
-                        </section>
-                    </div>
-
-                    <!--for mobile display section4-->
-                    <div class="section4a-slider slider">
-                        <section class="slider-area4a">
-
-                            <div class="box4">
-                                <div class="head4">
-                                    DAILYAI
-                                </div>
-                                <div class="oval4">
-                                    <img class="lazy" data-src="assets/computer7.png">
-                                </div>
-                                <div class="oval4-hover">
-                                    There are many variations of passages of Lorem Ipsum available, but the majority
-                                    have suffered alteration in some form, by injected humour, or randomised words which
-                                    don't look even slightly believable. If you are going to use a passage of Lorem
-                                    Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of
-                                    text. All the generators on the Internet tend to repeat predefined
-                                    chunks.
-                                </div>
-                            </div>
-
-                            <div class="box4">
-                                <div class="head4">
-                                    NATIONAL TAXI SERVICES
-                                </div>
-                                <div class="oval4">
-                                    <img class="lazy" src="assets/image3.jpg"
-                                        data-src="assets/assets-original-size/image3.jpg" width="90%" height="90%">
-                                </div>
-                                <div class="oval4-hover">
-                                    There are many variations of passages of Lorem Ipsum available, but the majority
-                                    have suffered alteration in some form, by injected humour, or randomised words which
-                                    don't look even slightly believable. If you are going to use a passage of Lorem
-                                    Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of
-                                    text. All the generators on the Internet tend to repeat predefined
-                                    chunks.
-                                </div>
-                            </div>
-
-                            <div class="box4">
-                                <div class="head4">
-                                    PROPERTYOK
-                                </div>
-                                <div class="oval4">
-                                    <img class="lazy" data-src="assets/computer7.png">
-                                </div>
-                                <div class="oval4-hover">
-                                    There are many variations of passages of Lorem Ipsum available, but the majority
-                                    have suffered alteration in some form, by injected humour, or randomised words which
-                                    don't look even slightly believable. If you are going to use a passage of Lorem
-                                    Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of
-                                    text. All the generators on the Internet tend to repeat predefined
-                                    chunks.
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-
-
-                    <!--End of Section4-slider-->
-
-                    <div class="text4-2a">
                         <h2>OUR TECH STACK</h2>
-                        <hr size="1" width="12%" color="#F97794;">
-                        <div class="paragraph1">
-                            Our talented team of developers are proficient across a multitude of powerful
-                            technologies
-                            and
-                            platforms.<br />
-                            We meticulously choose the best technology stack to deliver a solution that perfectly
-                            meets
-                            your
-                            business and client expectations.<br />
-                        </div>
                     </div>
-
-                    <!--displaying on large screens-->
-                    <div class="section4-tech-stack">
-                        <div class="bord">
-                            <div class="box6">
-                                <div class="head5">
-                                    WEB
-                                </div>
-                                <div class="bord">
-                                    <div class="oval5">
-                                        <img class="lazy" src="assets/logos/node.png"
-                                            data-src="assets/assets-original-size/logos/node.png" width="50%">
-                                        <br />
-                                        <div class="te1">
-                                            NODE
-                                        </div>
-                                    </div>
-                                    <div class="oval55">
-                                        <img class="lazy" src="assets/logos/VUE.png"
-                                            data-src="assets/assets-original-size/logos/VUE.png" width="50%">
-                                        <br />
-                                        <div class="te1">
-                                            VUE
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="box6">
-                                <div class="head5">
-                                    MOBILE
-                                </div>
-                                <div class="bord">
-                                    <div class="oval5">
-                                        <img class="lazy" src="assets/logos/react.png"
-                                            data-src="assets/assets-original-size/logos/react.png" width="50%">
-                                        <br />
-                                        <div class="te1">
-                                            REACT
-                                        </div>
-                                    </div>
-                                    <div class="oval55">
-                                        <img class="lazy" src="assets/logos/FLUTTER.png"
-                                            data-src="assets/assets-original-size/logos/FLUTTER.png" width="50%">
-                                        <br />
-                                        <div class="te1">
-                                            FLUTTER
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="box6">
-                                <div class="head5">
-                                    CLOUD
-                                </div>
-                                <div class="bord">
-                                    <div class="oval5">
-                                        <img class="lazy" src="assets/logos/AWS.png"
-                                            data-src="assets/assets-original-size/logos/AWS.png" width="50%">
-                                        <br />
-                                        <div class="te1">
-                                            AWS
-                                        </div>
-                                    </div>
-                                    <div class="oval55">
-                                        <img class="lazy" src="assets/logos/AZURE.png"
-                                            data-src="assets/assets-original-size/logos/AZURE.png" width="50%">
-                                        <br />
-                                        <div class="te1">
-                                            AZURE
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="box6">
-                                <div class="head5">
-                                    IoT,ML AND AI
-                                </div>
-                                <div class="bord">
-                                    <div class="oval5">
-                                        <img class="lazy" src="assets/logos/MQTT.png"
-                                            data-src="assets/assets-original-size/logos/MQTT.png" width="50%">
-                                        <br />
-                                        <div class="te1">
-                                            MQTT
-                                        </div>
-                                    </div>
-                                    <div class="oval55">
-                                        <img class="lazy" src="assets/logos/BIGML.png"
-                                            data-src="assets/assets-original-size/logos/BIGML.png" width="50%">
-                                        <br />
-                                        <div class="te1">
-                                            BIGML
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="box6">
-                                <div class="head5">
-                                    DESIGN
-                                </div>
-                                <div class="bord">
-                                    <div class="oval5">
-                                        <img class="lazy" src="assets/logos/Sketch.png"
-                                            data-src="assets/assets-original-size/logos/Sketch.png" width="50%">
-                                        <br />
-                                        <div class="te1">
-                                            SKETCH
-                                        </div>
-                                    </div>
-                                    <div class="oval55">
-                                        <img class="lazy" src="assets/logos/FIGMA.png"
-                                            data-src="assets/assets-original-size/logos/FIGMA.png" width="50%">
-                                        <br />
-                                        <div class="te1">
-                                            FIGMA
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="bord">
-                            <div class="box6">
-                                <div class="bord">
-                                    <div class="oval5">
-                                        <img class="lazy" src="assets/logos/react.png"
-                                            data-src="assets/assets-original-size/logos/react.png" width=" 50%"><br />
-                                        <div class="te1">
-                                            REACT
-                                        </div>
-
-                                    </div>
-                                    <div class="oval55">
-                                        <img class="lazy" src="assets/logos/ANGULAR.png"
-                                            data-src="assets/assets-original-size/logos/ANGULAR.png" width="50%"><br />
-                                        <div class="te1">
-                                            ANGULAR
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="box6">
-                                <div class="bord">
-                                    <div class="oval5">
-                                        <img class="lazy" src="assets/logos/Nativescript.png"
-                                            data-src="assets/assets-original-size/logos/Nativescript.png"
-                                            width="50%"><br />
-                                        <div class="te1">
-                                            NATIVESCRIPT
-                                        </div>
-                                    </div>
-                                    <div class="oval55">
-                                        <img class="lazy" src="assets/logos/IONIC.png"
-                                            data-src="assets/assets-original-size/logos/IONIC.png" width="50%">
-                                        <br />
-                                        <div class="te1">
-                                            IONIC
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="box6">
-                                <div class="bord">
-                                    <div class="oval5">
-                                        <img class="lazy" src="assets/logos/GCP.png"
-                                            data-src="assets/assets-original-size/logos/GCP.png" width="50%">
-                                        <br />
-                                        <div class="te1">
-                                            GCP
-                                        </div>
-                                    </div>
-                                    <div class="oval55">
-                                        <img class="lazy" src="assets/logos/FIREBASE.png"
-                                            data-src="assets/assets-original-size/logos/FIREBASE.png" width="50%">
-                                        <br />
-                                        <div class="te1">
-                                            FIREBASE
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="box6">
-                                <div class="bord">
-                                    <div class="oval5">
-                                        <img class="lazy" src="assets/logos/tensorflow.png"
-                                            data-src="assets/assets-original-size/logos/tensorflow.png" width="50%">
-                                        <br />
-                                        <div class="te1">
-                                            TENSORFLOW
-                                        </div>
-                                    </div>
-                                    <div class="oval55">
-                                        <img class="lazy" src="assets/logos/OPENCV.png"
-                                            data-src="assets/assets-original-size/logos/OPENCV.png" width="50%">
-                                        <br />
-                                        <div class="te1">
-                                            OPENCV
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="box6">
-                                <div class="bord">
-                                    <div class="oval5">
-                                        <img class="lazy" src="assets/logos/PHOTOSHOP.png"
-                                            data-src="assets/assets-original-size/logos/PHOTOSHOP.png" width="50%">
-                                        <br />
-                                        <div class="te1">
-                                            PHOTOSHOP
-                                        </div>
-                                    </div>
-                                    <div class="oval55">
-                                        <img class="lazy" src="assets/logos/MARVEL.png"
-                                            data-src="assets/assets-original-size/logos/MARVEL.png" width="50%">
-                                        <br />
-                                        <div class="te1">
-                                            MARVEL
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <hr size="1" width="12%" color="#F97794;">
+                    <div class="paragraph1">
+                        Our talented team of developers are proficient across a multitude of powerful
+                        technologies
+                        and
+                        platforms.<br />
+                        We meticulously choose the best technology stack to deliver a solution that perfectly
+                        meets
+                        your
+                        business and client expectations.<br />
                     </div>
+                </div>
 
-                    <!--End of displaying on large screens-->
-
-                    <!--Start of mobile devices-->
-                    <div class="section4a-tech-stack">
+                <!--displaying on large screens-->
+                <div class="section4-tech-stack">
+                    <div class="bord">
                         <div class="box6">
-                            <div class="head55">
+                            <div class="head5">
                                 WEB
                             </div>
                             <div class="bord">
-                                <div class="box6a-mobile">
-                                    <img class="lazy" src="assets/logos/node.png"
-                                        data-src="assets/assets-original-size/logos/node.png" width="50%">
+                                <div class="oval5">
+                                    <img class="lazy" data-src="assets/logos/node.png" src="assets/dummy/logos/node.png"
+                                        width="50%">
                                     <br />
                                     <div class="te1">
                                         NODE
                                     </div>
                                 </div>
-                                <div class="box6a-mobile">
-                                    <img class="lazy" src="assets/logos/VUE.png"
-                                        data-src="assets/assets-original-size/logos/VUE.png" width="50%">
+                                <div class="oval55">
+                                    <img class="lazy" data-src="assets/logos/VUE.png" src="assets/dummy/logos/VUE.png"
+                                        width="50%">
                                     <br />
                                     <div class="te1">
                                         VUE
                                     </div>
                                 </div>
-                                <div class="box6a-mobile">
-                                    <img class="lazy" src="assets/logos/react.png"
-                                        data-src="assets/assets-original-size/logos/react.png" width=" 50%"><br />
+                            </div>
+                        </div>
+
+                        <div class="box6">
+                            <div class="head5">
+                                MOBILE
+                            </div>
+                            <div class="bord">
+                                <div class="oval5">
+                                    <img class="lazy" data-src="assets/logos/react.png"
+                                        src="assets/dummy/logos/react.png" width="50%">
+                                    <br />
+                                    <div class="te1">
+                                        REACT
+                                    </div>
+                                </div>
+                                <div class="oval55">
+                                    <img class="lazy" data-src="assets/logos/FLUTTER.png"
+                                        src="assets/dummy/logos/FLUTTER.png" width="50%">
+                                    <br />
+                                    <div class="te1">
+                                        FLUTTER
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box6">
+                            <div class="head5">
+                                CLOUD
+                            </div>
+                            <div class="bord">
+                                <div class="oval5">
+                                    <img class="lazy" data-src="assets/logos/AWS.png" src="assets/dummy/logos/AWS.png"
+                                        width="50%">
+                                    <br />
+                                    <div class="te1">
+                                        AWS
+                                    </div>
+                                </div>
+                                <div class="oval55">
+                                    <img class="lazy" data-src="assets/logos/AZURE.png"
+                                        src="assets/dummy/logos/AZURE.png" width="50%">
+                                    <br />
+                                    <div class="te1">
+                                        AZURE
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box6">
+                            <div class="head5">
+                                IoT,ML,AI
+                            </div>
+                            <div class="bord">
+                                <div class="oval5">
+                                    <img class="lazy" data-src="assets/logos/MQTT.png" src="assets/dummy/logos/MQTT.png"
+                                        width="50%">
+                                    <br />
+                                    <div class="te1">
+                                        MQTT
+                                    </div>
+                                </div>
+                                <div class="oval55">
+                                    <img class="lazy" data-src="assets/logos/BIGML.png"
+                                        src="assets/dummy/logos/BIGML.png" width="50%">
+                                    <br />
+                                    <div class="te1">
+                                        BIGML
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box6">
+                            <div class="head5">
+                                DESIGN
+                            </div>
+                            <div class="bord">
+                                <div class="oval5">
+                                    <img class="lazy" data-src="assets/logos/Sketch.png"
+                                        src="assets/dummy/logos/Sketch.png" width="50%">
+                                    <br />
+                                    <div class="te1">
+                                        SKETCH
+                                    </div>
+                                </div>
+                                <div class="oval55">
+                                    <img class="lazy" data-src="assets/logos/FIGMA.png"
+                                        src="assets/dummy/logos/FIGMA.png" width="50%">
+                                    <br />
+                                    <div class="te1">
+                                        FIGMA
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bord">
+                        <div class="box6">
+                            <div class="bord">
+                                <div class="oval5">
+                                    <img class="lazy" data-src="assets/logos/react.png"
+                                        src="assets/dummy/logos/react.png" width=" 50%"><br />
                                     <div class="te1">
                                         REACT
                                     </div>
 
                                 </div>
-                                <div class="box6a-mobile">
-                                    <img class="lazy" src="assets/logos/ANGULAR.png"
-                                        data-src="assets/assets-original-size/logos/ANGULAR.png" width="50%"><br />
+                                <div class="oval55">
+                                    <img class="lazy" data-src="assets/logos/ANGULAR.png"
+                                        src="assets/dummy/logos/ANGULAR.png" width="50%"><br />
                                     <div class="te1">
                                         ANGULAR
                                     </div>
@@ -760,36 +644,17 @@
                         </div>
 
                         <div class="box6">
-                            <div class="head55">
-                                MOBILE
-                            </div>
                             <div class="bord">
-                                <div class="box6a-mobile">
-                                    <img class="lazy" src="assets/logos/react.png"
-                                        data-src="assets/assets-original-size/logos/react.png" width=" 50%">
-                                    <br />
-                                    <div class="te1">
-                                        REACT
-                                    </div>
-                                </div>
-                                <div class="box6a-mobile">
-                                    <img class="lazy" src="assets/logos/FLUTTER.png"
-                                        data-src="assets/assets-original-size/logos/FLUTTER.png" width="50%">
-                                    <br />
-                                    <div class="te1">
-                                        FLUTTER
-                                    </div>
-                                </div>
-                                <div class="box6a-mobile">
-                                    <img class="lazy" src="assets/logos/Nativescript.png"
-                                        data-src="assets/assets-original-size/logos/Nativescript.png" width="50%"><br />
+                                <div class="oval5">
+                                    <img class="lazy" data-src="assets/logos/Nativescript.png"
+                                        src="assets/dummy/logos/Nativescript.png" width="50%"><br />
                                     <div class="te1">
                                         NATIVESCRIPT
                                     </div>
                                 </div>
-                                <div class="box6a-mobile">
-                                    <img class="lazy" src="assets/logos/IONIC.png"
-                                        data-src="assets/assets-original-size/logos/IONIC.png" width="50%">
+                                <div class="oval55">
+                                    <img class="lazy" data-src="assets/logos/IONIC.png"
+                                        src="assets/dummy/logos/IONIC.png" width="50%">
                                     <br />
                                     <div class="te1">
                                         IONIC
@@ -799,37 +664,18 @@
                         </div>
 
                         <div class="box6">
-                            <div class="head55">
-                                CLOUD
-                            </div>
                             <div class="bord">
-                                <div class="box6a-mobile">
-                                    <img class="lazy" src="assets/logos/AWS.png"
-                                        data-src="assets/assets-original-size/logos/AWS.png" width="50%">
-                                    <br />
-                                    <div class="te1">
-                                        AWS
-                                    </div>
-                                </div>
-                                <div class="box6a-mobile">
-                                    <img class="lazy" src="assets/logos/AZURE.png"
-                                        data-src="assets/assets-original-size/logos/AZURE.png" width="50%">
-                                    <br />
-                                    <div class="te1">
-                                        AZURE
-                                    </div>
-                                </div>
-                                <div class="box6a-mobile">
-                                    <img class="lazy" src="assets/logos/GCP.png"
-                                        data-src="assets/assets-original-size/logos/GCP.png" width="50%">
+                                <div class="oval5">
+                                    <img class="lazy" data-src="assets/logos/GCP.png" src="assets/dummy/logos/GCP.png"
+                                        width="50%">
                                     <br />
                                     <div class="te1">
                                         GCP
                                     </div>
                                 </div>
-                                <div class="box6a-mobile">
-                                    <img class="lazy" src="assets/logos/FIREBASE.png"
-                                        data-src="assets/assets-original-size/logos/FIREBASE.png" width="50%">
+                                <div class="oval55">
+                                    <img class="lazy" data-src="assets/logos/FIREBASE.png"
+                                        src="assets/dummy/logos/FIREBASE.png" width="50%">
                                     <br />
                                     <div class="te1">
                                         FIREBASE
@@ -839,37 +685,18 @@
                         </div>
 
                         <div class="box6">
-                            <div class="head55">
-                                IoT,ML AND AI
-                            </div>
                             <div class="bord">
-                                <div class="box6a-mobile">
-                                    <img class="lazy" src="assets/logos/MQTT.png"
-                                        data-src="assets/assets-original-size/logos/MQTT.png" width="50%">
-                                    <br />
-                                    <div class="te1">
-                                        MQTT
-                                    </div>
-                                </div>
-                                <div class="box6a-mobile">
-                                    <img class="lazy" src="assets/logos/BIGML.png"
-                                        data-src="assets/assets-original-size/logos/BIGML.png" width="50%">
-                                    <br />
-                                    <div class="te1">
-                                        BIGML
-                                    </div>
-                                </div>
-                                <div class="box6a-mobile">
-                                    <img class="lazy" src="assets/logos/tensorflow.png"
-                                        data-src="assets/assets-original-size/logos/tensorflow.png" width="50%">
+                                <div class="oval5">
+                                    <img class="lazy" data-src="assets/logos/tensorflow.png"
+                                        src="assets/dummy/logos/tensorflow.png" width="50%">
                                     <br />
                                     <div class="te1">
                                         TENSORFLOW
                                     </div>
                                 </div>
-                                <div class="box6a-mobile">
-                                    <img class="lazy" src="assets/logos/OPENCV.png"
-                                        data-src="assets/assets-original-size/logos/OPENCV.png" width="50%">
+                                <div class="oval55">
+                                    <img class="lazy" data-src="assets/logos/OPENCV.png"
+                                        src="assets/dummy/logos/OPENCV.png" width="50%">
                                     <br />
                                     <div class="te1">
                                         OPENCV
@@ -879,37 +706,18 @@
                         </div>
 
                         <div class="box6">
-                            <div class="head55">
-                                DESIGN
-                            </div>
                             <div class="bord">
-                                <div class="box6a-mobile">
-                                    <img class="lazy" src="assets/logos/Sketch.png"
-                                        data-src="assets/assets-original-size/logos/Sketch.png" width="50%">
-                                    <br />
-                                    <div class="te1">
-                                        SKETCH
-                                    </div>
-                                </div>
-                                <div class="box6a-mobile">
-                                    <img class="lazy" src="assets/logos/FIGMA.png"
-                                        data-src="assets/assets-original-size/logos/FIGMA.png" width="50%">
-                                    <br />
-                                    <div class="te1">
-                                        FIGMA
-                                    </div>
-                                </div>
-                                <div class="box6a-mobile">
-                                    <img class="lazy" src="assets/logos/PHOTOSHOP.png"
-                                        data-src="assets/assets-original-size/logos/PHOTOSHOP.png" width="50%">
+                                <div class="oval5">
+                                    <img class="lazy" data-src="assets/logos/PHOTOSHOP.png"
+                                        src="assets/dummy/logos/PHOTOSHOP.png" width="50%">
                                     <br />
                                     <div class="te1">
                                         PHOTOSHOP
                                     </div>
                                 </div>
-                                <div class="box6a-mobile">
-                                    <img class="lazy" src="assets/logos/MARVEL.png"
-                                        data-src="assets/assets-original-size/logos/MARVEL.png" width="50%">
+                                <div class="oval55">
+                                    <img class="lazy" data-src="assets/logos/MARVEL.png"
+                                        src="assets/dummy/logos/MARVEL.png" width="50%">
                                     <br />
                                     <div class="te1">
                                         MARVEL
@@ -917,12 +725,214 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
 
+                <!--End of displaying on large screens-->
+
+                <!--Start of mobile devices-->
+                <div class="section4a-tech-stack">
+                    <div class="box6">
+                        <div class="head55">
+                            WEB
+                        </div>
+                        <div class="bord">
+                            <div class="box6 box6a-mobile">
+                                <img class="lazy" data-src="assets/logos/node.png" src="assets/dummy/logos/node.png"
+                                    width="50%">
+                                <br />
+                                <div class="te1">
+                                    NODE
+                                </div>
+                            </div>
+                            <div class="box6 box6a-mobile">
+                                <img class="lazy" data-src="assets/logos/VUE.png" src="assets/dummy/logos/VUE.png"
+                                    width="50%">
+                                <br />
+                                <div class="te1">
+                                    VUE
+                                </div>
+                            </div>
+                            <div class="box6 box6a-mobile">
+                                <img class="lazy" data-src="assets/logos/react.png" src="assets/dummy/logos/react.png"
+                                    width=" 50%"><br />
+                                <div class="te1">
+                                    REACT
+                                </div>
+
+                            </div>
+                            <div class="box6 box6a-mobile">
+                                <img class="lazy" data-src="assets/logos/ANGULAR.png"
+                                    src="assets/dummy/assets-original-size/logos/ANGULAR.png" width="50%"><br />
+                                <div class="te1">
+                                    ANGULAR
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <!--End of mobile devives-->
+                    <div class="box6">
+                        <div class="head55">
+                            MOBILE
+                        </div>
+                        <div class="bord">
+                            <div class="box6 box6a-mobile">
+                                <img class="lazy" data-src="assets/logos/react.png" src="assets/dummy/logos/react.png"
+                                    width=" 50%">
+                                <br />
+                                <div class="te1">
+                                    REACT
+                                </div>
+                            </div>
+                            <div class="box6 box6a-mobile">
+                                <img class="lazy" data-src="assets/logos/FLUTTER.png"
+                                    src="assets/dummy/logos/FLUTTER.png" width="50%">
+                                <br />
+                                <div class="te1">
+                                    FLUTTER
+                                </div>
+                            </div>
+                            <div class="box6 box6a-mobile">
+                                <img class="lazy" data-src="assets/logos/Nativescript.png"
+                                    src="assets/dummy/logos/Nativescript.png" width="50%"><br />
+                                <div class="te1">
+                                    NATIVESCRIPT
+                                </div>
+                            </div>
+                            <div class="box6 box6a-mobile">
+                                <img class="lazy" data-src="assets/logos/IONIC.png" src="assets/dummy/logos/IONIC.png"
+                                    width="50%">
+                                <br />
+                                <div class="te1">
+                                    IONIC
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box6">
+                        <div class="head55">
+                            CLOUD
+                        </div>
+                        <div class="bord">
+                            <div class="box6 box6a-mobile">
+                                <img class="lazy" data-src="assets/logos/AWS.png" src="assets/dummy/logos/AWS.png"
+                                    width="50%">
+                                <br />
+                                <div class="te1">
+                                    AWS
+                                </div>
+                            </div>
+                            <div class="box6 box6a-mobile">
+                                <img class="lazy" data-src="assets/logos/AZURE.png" src="assets/dummy/logos/AZURE.png"
+                                    width="50%">
+                                <br />
+                                <div class="te1">
+                                    AZURE
+                                </div>
+                            </div>
+                            <div class="box6 box6a-mobile">
+                                <img class="lazy" data-src="assets/logos/GCP.png" src="assets/dummy/logos/GCP.png"
+                                    width="50%">
+                                <br />
+                                <div class="te1">
+                                    GCP
+                                </div>
+                            </div>
+                            <div class="box6 box6a-mobile">
+                                <img class="lazy" data-src="assets/logos/FIREBASE.png"
+                                    src="assets/dummy/logos/FIREBASE.png" width="50%">
+                                <br />
+                                <div class="te1">
+                                    FIREBASE
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box6">
+                        <div class="head55">
+                            IoT,ML AND AI
+                        </div>
+                        <div class="bord">
+                            <div class="box6 box6a-mobile">
+                                <img class="lazy" data-src="assets/logos/MQTT.png" src="assets/dummy/logos/MQTT.png"
+                                    width="50%">
+                                <br />
+                                <div class="te1">
+                                    MQTT
+                                </div>
+                            </div>
+                            <div class="box6 box6a-mobile">
+                                <img class="lazy" data-src="assets/logos/BIGML.png" src="assets/dummy/logos/BIGML.png"
+                                    width="50%">
+                                <br />
+                                <div class="te1">
+                                    BIGML
+                                </div>
+                            </div>
+                            <div class="box6 box6a-mobile">
+                                <img class="lazy" data-src="assets/logos/tensorflow.png"
+                                    src="assets/dummy/logos/tensorflow.png" width="50%">
+                                <br />
+                                <div class="te1">
+                                    TENSORFLOW
+                                </div>
+                            </div>
+                            <div class="box6 box6a-mobile">
+                                <img class="lazy" data-src="assets/logos/OPENCV.png" src="assets/dummy/logos/OPENCV.png"
+                                    width="50%">
+                                <br />
+                                <div class="te1">
+                                    OPENCV
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box6">
+                        <div class="head55">
+                            DESIGN
+                        </div>
+                        <div class="bord">
+                            <div class="box6 box6a-mobile">
+                                <img class="lazy" data-src="assets/logos/Sketch.png" src="assets/dummy/logos/Sketch.png"
+                                    width="50%">
+                                <br />
+                                <div class="te1">
+                                    SKETCH
+                                </div>
+                            </div>
+                            <div class="box6 box6a-mobile">
+                                <img class="lazy" data-src="assets/logos/FIGMA.png" src="assets/dummy/logos/FIGMA.png"
+                                    width="50%">
+                                <br />
+                                <div class="te1">
+                                    FIGMA
+                                </div>
+                            </div>
+                            <div class="box6 box6a-mobile">
+                                <img class="lazy" data-src="assets/logos/PHOTOSHOP.png"
+                                    src="assets/dummy/logos/PHOTOSHOP.png" width="50%">
+                                <br />
+                                <div class="te1">
+                                    PHOTOSHOP
+                                </div>
+                            </div>
+                            <div class="box6 box6a-mobile">
+                                <img class="lazy" data-src="assets/logos/MARVEL.png" src="assets/dummy/logos/MARVEL.png"
+                                    width="50%">
+                                <br />
+                                <div class="te1">
+                                    MARVEL
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
+
+                <!--End of mobile devives-->
             </div>
 
             <!--5th Section-->
@@ -985,19 +995,17 @@
                         <div class="box66">
                             <div class="bord">
                                 <div class="oval66">
-                                    <img class="lazy" src="assets/christofer.jpg"
-                                        data-src=" assets/assets-original-size/christofer.jpg">
+                                    <img class="lazy" src="assets/dummy/christofer.jpg"
+                                        data-src="assets/christofer.jpg">
                                 </div>
                                 <div class="head66">
                                     <h5>Christoffer Klemming</h5>
                                     Growth Product Manager
-                                    and Founder of Waitwhile Inc.
                                 </div>
-
                             </div>
 
                             <div class="paragraph1">
-                                "Neoito have consistently been delivering high-quality and
+                                <br>"Neoito have consistently been delivering high-quality and
                                 performant code for Waitwhile. They're well versed in the latest
                                 framework(incl. Angular 6+,Redux,NgRx etc.) and are skilled
                                 communicators. We enjoy working them very much!"
@@ -1007,7 +1015,7 @@
                         <div class="box66">
                             <div class="bord">
                                 <div class="oval66">
-                                    <img class="lazy" src="assets/Spencer Dusebout.jpg"
+                                    <img class="lazy" src="assets/dummy/Spencer Dusebout.jpg"
                                         data-src="assets/Spencer Dusebout.jpg">
                                 </div>
                                 <div class="head66">
@@ -1018,7 +1026,7 @@
                             </div>
 
                             <div class="paragraph1">
-                                "They are extremely technically competent, both in terms of their
+                                <br>"They are extremely technically competent, both in terms of their
                                 innovative approach and ability to execute."
                             </div>
                         </div>
@@ -1030,7 +1038,7 @@
             <!--7th Section-->
 
             <div class="section7">
-                <div class="wrap">
+                <div class="wrap7">
                     <div class="text7">
                         <h2>OUR CORE TEAM</h2>
                         <hr size="1" width="12%" color="#F97794;">
@@ -1042,103 +1050,108 @@
                     <section class="slider-area ">
                         <div class="bord7a">
                             <div class="box77a">
-                                <img class="lazy" src="assets/Faiz1.jpg"
-                                    data-src="assets/assets-original-size/faiz_new.png" width="100%" height="100%">
+                                <img class="lazy" src="assets/dummy/Faiz1_dummy.jpg" data-src="assets/Faiz1.jpg"
+                                    width="100%">
                                 <div class="space7">
                                     <h6>Faiz</h6>
-                                    Chief Executive Officer
-                                    <img class="lazy" data-src="assets/pink_linkedin.png">
+                                    Chief Executive officer
+                                    <img class="lazy" src="assets/dummy/pink_linkedin.jpg"
+                                        data-src="assets/pink_linkedin.png">
                                 </div>
                             </div>
                         </div>
                         <div class="bord7a">
                             <div class="box77a">
-                                <img class="lazy" src="assets/abhilash1.jpg"
-                                    data-src="assets/assets-original-size/abilash.jpeg" width="100%" height="100%">
+                                <img class="lazy" src="assets/dummy/abhilash1.jpg" data-src="assets/abhilash1.jpg"
+                                    width="100%">
                                 <div class="space7">
                                     <h6>Abhilash</h6>
-                                    Chief business Officer
-                                    <img class="lazy" data-src="assets/pink_linkedin.png">
+                                    Chief business officer
+                                    <img class="lazy" src="assets/dummy/pink_linkedin.jpg"
+                                        data-src="assets/pink_linkedin.png">
                                 </div>
                             </div>
                         </div>
                         <div class="bord7a">
                             <div class="box77a">
-                                <img class="lazy" src="assets/rakesh.jpg"
-                                    data-src="assets/assets-original-size/rakesh.jpg" width="100%" height="100%">
+                                <img class="lazy" src="assets/dummy/rakesh.jpg" data-src="assets/rakesh.jpg"
+                                    width="100%">
                                 <div class="space7">
                                     <h6>Rakesh Kiron</h6>
                                     Chief operating officer
-                                    <img class="lazy" data-src="assets/pink_linkedin.png">
+                                    <img class="lazy" src="assets/dummy/pink_linkedin.jpg"
+                                        data-src="assets/pink_linkedin.png">
                                 </div>
                             </div>
                         </div>
                         <div class="bord7a">
                             <div class="box77a">
-                                <img class="lazy" src="assets/suralal2.jpg"
-                                    data-src="assets/assets-original-size/suralal.jpg" width="100%" height="100%">
+                                <img class="lazy" src="assets/dummy/suralal2.jpg" data-src="assets/suralal2.jpg"
+                                    width="100%">
                                 <div class="space7">
                                     <h6>Suralal Suresh</h6>
-                                    Tech Lead
-                                    <img class="lazy" data-src="assets/pink_linkedin.png">
+                                    Tech Leading officer
+                                    <img class="lazy" src="assets/dummy/pink_linkedin.jpg"
+                                        data-src="assets/pink_linkedin.png">
                                 </div>
                             </div>
                         </div>
 
                         <div class="bord7a">
                             <div class="box77a">
-                                <img class="lazy" src="assets/Faiz1.jpg"
-                                    data-src="assets/assets-original-size/faiz_new.png" width="100%" height="100%">
+                                <img class="lazy" src="assets/dummy/Faiz1_dummy.jpg" data-src="assets/Faiz1.jpg"
+                                    width="100%">
                                 <div class="space7">
                                     <h6>Faiz</h6>
                                     Chief Executive Officer
-                                    <img class="lazy" data-src="assets/pink_linkedin.png">
+                                    <img class="lazy" src="assets/dummy/pink_linkedin.jpg"
+                                        data-src="assets/pink_linkedin.png">
                                 </div>
                             </div>
                         </div>
                         <div class="bord7a">
                             <div class="box77a">
-                                <img class="lazy" src="assets/abhilash1.jpg"
-                                    data-src="assets/assets-original-size/abilash.jpeg" width="100%" height="100%">
+                                <img class="lazy" src="assets/dummy/abhilash1.jpg" data-src="assets/abhilash1.jpg"
+                                    width="100%">
                                 <div class="space7">
                                     <h6>Abhilash</h6>
                                     Chief business Officer
-                                    <img class="lazy" data-src="assets/pink_linkedin.png">
+                                    <img class="lazy" src="assets/dummy/pink_linkedin.jpg"
+                                        data-src="assets/pink_linkedin.png">
                                 </div>
                             </div>
                         </div>
                         <div class="bord7a">
                             <div class="box77a">
-                                <img class="lazy" src="assets/rakesh.jpg"
-                                    data-src="assets/assets-original-size/rakesh.jpg" width="100%" height="100%">
+                                <img class="lazy" src="assets/dummy/rakesh.jpg" data-src="assets/rakesh.jpg">
                                 <div class="space7">
                                     <h6>Rakesh Kiron</h6>
                                     Chief operating officer
-                                    <img class="lazy" data-src="assets/pink_linkedin.png">
+                                    <img class="lazy" src="assets/dummy/pink_linkedin.jpg"
+                                        data-src="assets/pink_linkedin.png">
                                 </div>
                             </div>
                         </div>
                         <div class="bord7a">
                             <div class="box77a">
-                                <img class="lazy" src="assets/suralal2.jpg"
-                                    data-src="assets/assets-original-size/suralal.jpg" width="100%" height="100%">
+                                <img class="lazy" src="assets/dummy/suralal2.jpg" data-src="assets/suralal2.jpg"
+                                    width="100%">
                                 <div class="space7">
                                     <h6>Suralal Suresh</h6>
-                                    Tech Lead
-                                    <img class="lazy" data-src="assets/pink_linkedin.png">
+                                    Tech Leading officer
+                                    <img class="lazy" src="assets/dummy/pink_linkedin.jpg"
+                                        data-src="assets/pink_linkedin.png">
                                 </div>
                             </div>
                         </div>
-
                     </section>
                 </div>
             </div>
 
-
             <!-- Section 7a for mobile screen-->
 
             <div class="section7a">
-                <div class="wrap">
+                <div class="wrap7">
                     <div class="text">
                         <h2>OUR CORE TEAM</h2>
                         <hr size="1" width="12%" color="#F97794;">
@@ -1150,45 +1163,49 @@
                     <section class="slider-area7a ">
                         <div class="bord7a">
                             <div class="box77a">
-                                <img class="lazy" src="assets/Faiz1.jpg"
-                                    data-src="assets/assets-original-size/faiz_new.png" width="100%" height="100%">
+                                <img class="lazy" src="assets/dummy/Faiz1_dummy.jpg" data-src="assets/Faiz1.jpg"
+                                    width="100%">
                                 <div class="space7">
                                     <h6>Faiz</h6>
                                     Chief Executive Officer
-                                    <img class="lazy" data-src="assets/pink_linkedin.png">
+                                    <img class="lazy" src="assets/dummy/pink_linkedin.jpg"
+                                        data-src="assets/pink_linkedin.png">
                                 </div>
                             </div>
                         </div>
                         <div class="bord7a">
                             <div class="box77a">
-                                <img class="lazy" src="assets/abhilash1.jpg"
-                                    data-src="assets/assets-original-size/abilash.jpeg" width="100%" height="100%">
+                                <img class="lazy" src="assets/dummy/abhilash1.jpg" data-src="assets/abhilash1.jpg"
+                                    width="100%">
                                 <div class="space7">
                                     <h6>Abhilash</h6>
                                     Chief business Officer
-                                    <img class="lazy" data-src="assets/pink_linkedin.png">
+                                    <img class="lazy" src="assets/dummy/pink_linkedin.jpg"
+                                        data-src="assets/pink_linkedin.png">
                                 </div>
                             </div>
                         </div>
                         <div class="bord7a">
                             <div class="box77a">
-                                <img class="lazy" src="assets/rakesh.jpg"
-                                    data-src="assets/assets-original-size/rakesh.jpg" width="100%" height="100%">
+                                <img class="lazy" src="assets/dummy/rakesh.jpg" data-src="assets/rakesh.jpg"
+                                    width="100%">
                                 <div class="space7">
                                     <h6>Rakesh Kiron</h6>
                                     Chief operating officer
-                                    <img class="lazy" data-src="assets/pink_linkedin.png">
+                                    <img class="lazy" src="assets/dummy/pink_linkedin.jpg"
+                                        data-src="assets/pink_linkedin.png">
                                 </div>
                             </div>
                         </div>
                         <div class="bord7a">
                             <div class="box77a">
-                                <img class="lazy" src="assets/suralal2.jpg"
-                                    data-src="assets/assets-original-size/suralal.jpg" width="100%" height="100%">
+                                <img class="lazy" src="assets/dummy/suralal2.jpg" data-src="assets/suralal2.jpg"
+                                    width="100%">
                                 <div class="space7">
                                     <h6>Suralal Suresh</h6>
-                                    Tech Lead
-                                    <img class="lazy" data-src="assets/pink_linkedin.png">
+                                    Tech Leading officer
+                                    <img class="lazy" src="assets/dummy/pink_linkedin.jpg"
+                                        data-src="assets/pink_linkedin.png">
                                 </div>
                             </div>
                         </div>
@@ -1199,7 +1216,7 @@
             <!--8th Section-->
 
             <div class="section8">
-                <div class="wrap8">
+                <div class="wrap7">
                     <div class="text7">
                         <h2>BLOGS</h2>
                         <hr size="1" width="12%" color="#F97794;">
@@ -1215,9 +1232,9 @@
                         <div class="space8">
                             <div class="bord">
                                 <div class="box8">
-                                    <div class="oval8 oval8a">
-                                        <img class="lazy" data-src="image8" src="assets/ngrok1.png" width="80%"
-                                            height="80%">
+                                    <div class="oval8">
+                                        <img class="lazy" src="assets/dummy/ngrok1.jpg" data-src="assets/ngrok1.png"
+                                            width="80%">
                                         <div class="paragraph8 ">
                                             August 23, 2019
                                         </div>
@@ -1253,8 +1270,9 @@
                                 </div>
 
                                 <div class="box8">
-                                    <div class="oval8 oval8a">
-                                        <img class="lazy" data-src="assets/robot1.jpg" width="80%" height="60%">
+                                    <div class="oval8">
+                                        <img class="lazy" src="assets/dummy/robot1 (1).jpg" data-src="assets/robot1.jpg"
+                                            width="80%">
                                         <div class="paragraph8  ">
                                             August 23, 2019
                                         </div>
@@ -1288,8 +1306,9 @@
                                 </div>
 
                                 <div class="box8">
-                                    <div class="oval8 oval8a">
-                                        <img class="lazy" data-src="assets/okay1.jpg" width="80%" height="80%">
+                                    <div class="oval8 ">
+                                        <img class="lazy" src="assets/dummy/okay1.jpg" data-src="assets/okay1.jpg"
+                                            width="80%">
                                         <div class="paragraph8  ">
                                             August 23, 2019
                                         </div>
@@ -1332,128 +1351,126 @@
 
                     <div class="section8a-slider">
                         <section class="slider-area4a ">
-                            <div class="oval8-mobile">
-                                <div class="pad">
-                                    <img class="lazy" data-src="image8" src="assets/ngrok1.png">
-                                </div>
-
-                                <div class="paragraph8 ">
-                                    August 23, 2019
-                                </div>
-                                <div class="paragraph88">
-                                    How to expose localhost to
-                                    any device using Ngrok
-                                </div>
-
-                                <div class="bord8a">
-                                    <span id="icons-style8" class="material-icons">
-                                        visibility
-                                    </span>
-                                    <div class="space8ab">
-                                        4.5k Views
+                            <div class="box8">
+                                <div class="oval8">
+                                    <img class="lazy" src="assets/dummy/ngrok1.jpg" data-src="assets/ngrok1.png"
+                                        width="80%">
+                                    <div class="paragraph8 ">
+                                        August 23, 2019
+                                    </div>
+                                    <div class="paragraph88">
+                                        How to expose localhost to<br />
+                                        any device using Ngrok
                                     </div>
 
-                                    <span id="icons-style8a" class="material-icons">
-                                        chat_bubble_outline
-                                    </span>
-                                    <div class="space8ab">
-                                        07
+                                    <div class="bord8a">
+                                        <span id="icons-style8" class="material-icons">
+                                            visibility
+                                        </span>
+                                        <div class="space8ab">
+                                            4.5k
+                                        </div>
+
+                                        <span id="icons-style8a" class="material-icons">
+                                            chat_bubble_outline
+                                        </span>
+                                        <div class="space8ab">
+                                            07
+                                        </div>
+
+                                        <span id="icons-style8a" class="material-icons">
+                                            reply
+                                        </span>
+                                        <div class="space8ab">
+                                            332
+                                        </div>
                                     </div>
 
-                                    <span id="icons-style8a" class="material-icons">
-                                        reply
-                                    </span>
-                                    <div class="space8ab">
-                                        332
-                                    </div>
-                                </div>
-
-                            </div>
-
-
-
-
-                            <div class="oval8-mobile1">
-
-                                <img class="lazy" data-src="assets/robot1.jpg">
-                                <div class="paragraph8  ">
-                                    August 23, 2019
-                                </div>
-                                <div class="paragraph88">
-                                    Introduction to Machine
-                                    Learning
-                                </div>
-                                <div class="bord8a">
-                                    <span id="icons-style8" class="material-icons">
-                                        visibility
-                                    </span>
-                                    <div class="space8ab">
-                                        4.5k Views
-                                    </div>
-
-                                    <span id="icons-style8a" class="material-icons">
-                                        chat_bubble_outline
-                                    </span>
-                                    <div class="space8ab">
-                                        07
-                                    </div>
-
-                                    <span id="icons-style8a" class="material-icons">
-                                        reply
-                                    </span>
-                                    <div class="space8ab">
-                                        332
-                                    </div>
                                 </div>
                             </div>
 
-
-
-                            <div class="oval8-mobile2">
-                                <img class="lazy" data-src="assets/okay1.jpg">
-                                <div class="paragraph8  ">
-                                    August 23, 2019
-                                </div>
-                                <div class="paragraph88">
-                                    Okay Google!Whats's new in<br />
-                                    search?
-                                </div>
-                                <div class="bord8a">
-                                    <span id="icons-style8" class="material-icons">
-                                        visibility
-                                    </span>
-                                    <div class="space8ab">
-                                        4.5k Views
+                            <div class="box8">
+                                <div class="oval8">
+                                    <img class="lazy" src="assets/dummy/robot1 (1).jpg" data-src="assets/robot1.jpg"
+                                        width="80%">
+                                    <div class="paragraph8  ">
+                                        August 23, 2019
                                     </div>
-
-                                    <span id="icons-style8a" class="material-icons">
-                                        chat_bubble_outline
-                                    </span>
-                                    <div class="space8ab">
-                                        07
+                                    <div class="paragraph88">
+                                        Introduction to Machine<br />
+                                        Learning
                                     </div>
+                                    <div class="bord8a">
+                                        <span id="icons-style8" class="material-icons">
+                                            visibility
+                                        </span>
+                                        <div class="space8ab">
+                                            4.5k
+                                        </div>
 
-                                    <span id="icons-style8a" class="material-icons">
-                                        reply
-                                    </span>
-                                    <div class="space8ab">
-                                        332
+                                        <span id="icons-style8a" class="material-icons">
+                                            chat_bubble_outline
+                                        </span>
+                                        <div class="space8ab">
+                                            07
+                                        </div>
+
+                                        <span id="icons-style8a" class="material-icons">
+                                            reply
+                                        </span>
+                                        <div class="space8ab">
+                                            332
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
+                            <div class="box8">
+                                <div class="oval8 ">
+                                    <img class="lazy" src="assets/dummy/okay1.jpg" data-src="assets/okay1.jpg"
+                                        width="80%">
+                                    <div class="paragraph8  ">
+                                        August 23, 2019
+                                    </div>
+                                    <div class="paragraph88">
+                                        Okay Google!Whats's new in<br />
+                                        search?
+                                    </div>
+                                    <div class="bord8a">
+                                        <span id="icons-style8" class="material-icons">
+                                            visibility
+                                        </span>
+                                        <div class="space8ab">
+                                            4.5k
+                                        </div>
+
+                                        <span id="icons-style8a" class="material-icons">
+                                            chat_bubble_outline
+                                        </span>
+                                        <div class="space8ab">
+                                            07
+                                        </div>
+
+                                        <span id="icons-style8a" class="material-icons">
+                                            reply
+                                        </span>
+                                        <div class="space8ab">
+                                            332
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                         </section>
                     </div>
                     <!--End of Blog Mobile View-->
-
                 </div>
             </div>
 
             <!--9th Section-->
 
             <div class="section9">
-                <div class="wrap">
+                <div class="wrap7">
                     <div class="text7">
                         <h2>LET'S CONNECT</h2>
                         <hr size="1" width="12%" color="#F97794;">
@@ -1521,7 +1538,7 @@
                                 <span id="icon-style9" class="material-icons">
                                     stay_primary_portrait
                                 </span>
-                                <div class="head9">
+                                <div class="head9 head9">
                                     Phone
                                 </div>
                                 <div class="text9">
@@ -1536,7 +1553,7 @@
             <!--10th Section-->
 
             <div class="section10">
-                <div class="wrap10">
+                <div class="wrap7 wrap10">
                     <div class="bord">
                         <div class="title2">
                             <div class="heading2">
@@ -1549,17 +1566,23 @@
                             </div>
 
                             <div class="bord10">
-                                <a href="#"><img class="lazy" data-src="assets/pink_fb.png" width="65%"></a>
-                                <a href="#"><img class="lazy" data-src="assets/pink_twitter.png" width="65%"></a>
-                                <a href="#"><img class="lazy" data-src="assets/pink_linkedin.png" width="65%"></a>
+                                <a href="#"><img class="lazy" src="assets/pinkfb.png" data-src="assets/pink_fb.png"
+                                        width="65%"></a>
+                                <a href="#"><img class="lazy" src="assets/pinktwitter.png"
+                                        data-src="assets/pink_twitter.png" width="65%"></a>
+                                <a href="#"><img class="lazy" src="assets/pinklinkedin.png"
+                                        data-src="assets/pink_linkedin.png" width="65%"></a>
                             </div>
 
                             <!--Mobile device-->
 
                             <div class="bord10-mobile">
-                                <a href="#"><img class="lazy" data-src="assets/pink_fb.png" width="65%"></a>
-                                <a href="#"><img class="lazy" data-src="assets/pink_twitter.png" width="65%"></a>
-                                <a href="#"><img class="lazy" data-src="assets/pink_linkedin.png" width="65%"></a>
+                                <a href="#"><img class="lazy" src="assets/dummy/pink_fb.jpg"
+                                        data-src="assets/pink_fb.png" width="65%"></a>
+                                <a href="#"><img class="lazy" src="assets/dummy/pink_twitter.jpg"
+                                        data-src="assets/pink_twitter.png" width="65%"></a>
+                                <a href="#"><img class="lazy" src="assets/dummy/pink_linkedin.jpg"
+                                        data-src="assets/pink_linkedin.png" width="65%"></a>
                             </div>
 
                             <!--End of Mobile device-->
@@ -1571,22 +1594,28 @@
                             </div>
                             <div class="bord">
                                 <div class="box10">
-                                    <img class="lazy" data-src="assets/download.jpg" width="95%" height="100%">
+                                    <img class="lazy" src="assets/dummy/download.jpg" data-src="assets/download.jpg"
+                                        width="95%">
                                 </div>
                                 <div class="box10">
-                                    <img class="lazy" data-src="assets/download.jpg" width="95%" height="100%">
+                                    <img class="lazy" src="assets/dummy/download.jpg" data-src="assets/download.jpg"
+                                        width="95%">
                                 </div>
                                 <div class="box10">
-                                    <img class="lazy" data-src="assets/download.jpg" width="95%" height="100%">
+                                    <img class="lazy" src="assets/dummy/download.jpg" data-src="assets/download.jpg"
+                                        width="95%">
                                 </div>
                                 <div class="box10">
-                                    <img class="lazy" data-src="assets/download.jpg" width="95%" height="100%">
+                                    <img class="lazy" src="assets/dummy/download.jpg" data-src="assets/download.jpg"
+                                        width="95%">
                                 </div>
                                 <div class="box10">
-                                    <img class="lazy" data-src="assets/download.jpg" width="95%" height="100%">
+                                    <img class="lazy" src="assets/dummy/download.jpg" data-src="assets/download.jpg"
+                                        width="95%">
                                 </div>
                                 <div class="box10">
-                                    <img class="lazy" data-src="assets/download.jpg" width="95%" height="100%">
+                                    <img class="lazy" src="assets/dummy/download.jpg" data-src="assets/download.jpg"
+                                        width="95%">
                                 </div>
                             </div>
                         </div>
@@ -1642,9 +1671,9 @@
                             <span id="icon-style10" class="material-icons">
                                 copyright
                             </span>
-                            <div class="text11ab">
+                            <div class="text11ab-mob">
                                 All Rights Reserved Powered by&nbsp;
-                                <h6 class="text11">
+                                <h6 class="text11 text11-mob">
                                     neoito.com
                                 </h6>
                             </div>
@@ -1670,7 +1699,16 @@
 
         <!--End of Mobile View-->
     </div>
-    </div>
+
+
+    <script>
+        function js_method() {
+            //todos
+            var elementDiv = document.getElementById("main");
+            elementDiv.style.display = "block";
+        }
+    </script>
+
 
 
     <script>
@@ -1694,6 +1732,8 @@
             $('#mobile_icon').live('click', function (event) {
                 $('#After-header').toggle('show');
                 $('.title1-mobile').toggle('show');
+                $('.title1-mobile1-mob').toggle('show');
+                $('#logo1-mob').toggle('show');
                 $("#sidebar").toggleClass("active");
                 $(".icon").toggleClass("close");
             });
@@ -1803,6 +1843,8 @@
 
         }(this);
     </script>
+
+
 
 </body>
 
